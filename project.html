@@ -9,13 +9,136 @@
   </head>
   <body>
     <div class="container">
-      <nav>
+      <nav class="caseNav">
         <img src="images/Logo-DG-70px.trns.png">
-        <div class="navlinks">
+        <div class="navLinks">
           <ul>
             <li>WORK</li>
             <li>ABOUT</li>
             <li>CONTACT</li>
+            <section></section>
           </ul>
         </div>
       </nav>
+      <!-- CASE HERO ---->
+      <section id="CaseStudyHero">
+        <img src="images/CASE-HERO-DARK.png">
+      </section>
+      <!-- CASE STUDY ---->
+      <!-- Row of Contents ---->
+      <ul class="rowOfContents">
+        <li>INTRO</li>
+        <li>RESEARCH</li>
+        <li>INFORMATION ARCHITECTURE</li>
+        <li>BRANDING & VISUAL DESIGN</li>
+        <li>TESTING</li>
+        <li>CONCLUSION</li>
+      </ul><br>
+        <!-- INTRO ---->
+        <h1>KERNEL</h1>
+        <h3>UX RESEARCH • BRANDING & VISUAL DESIGN</h3>
+        <h2>Making Cloud Storage fun, fast, and easy - for both casual and professional users.</h2>
+        <br>
+        <p>Our digital info is scattered across messy and disconnected storage systems. As it piles up, our files gets harder to find, and thus harder to share with others. Everyone uses their drives differently so there’s no one-size-fits-all solution.<br>
+
+        Kernel lets users store, share, and collaborate on digital files, all in one place. Users’ needs & approaches vary, so Kernel enables them with multiple search-options and flexible views. Easy previewing and auto-sorting saves time and energy so users can focus on their real goal.<br>
+        <input type="button" value="CLICKABLE PROTOTYPE"><br>
+
+        <p>Challenged with finding a spot in the already-crowded Cloud Storage market, my work began with researching the competition and habits of those who could benefit from the project. </p>
+        <br>
+        <!-- RESEARCH ---->
+        <section id="Research">
+          <h4>RESEARCH</h4>
+          <img src="images/research-hero-image.png">
+          <h5>COMPETITIVE ANALYSIS</h5>
+          <p>First I studied existing cloud storage systems out there to see where Kernel could fit in:</p>
+          <ul id="GoogleDrive">
+            <li><img src="images/googledrive_logo.png" alt="Google Drive">
+              <p>+ Widely used</p>
+              <p>+ offers losts of free space</p>
+              <p>+ connected to Google Suite</p>
+              <p>- Interface is messy and dense</p>
+            </li><br>
+          <ul id="Dropbox">
+              <li>
+                <img src="images/app-dropbox-windows@2x.png" alt="Dropbox">
+                <p>+ Well-known</p>
+                <p>+ Utility is understood</p>
+                <p>- Dry & Clunky</p>
+                <p>- Text-heavy</p>
+              </li><br>
+          <ul id="Evernote">
+              <li>
+                <img src="images/evernote-logo.png" alt="Evernote">
+                <p>+ Visually rich</p>
+                <p>+ Distinct Branding</p>
+                <p>- Not well-known</p>
+                <p>- Bloated with features</p>
+              </li><br>
+
+          <p>The competition is tough with giants like Google and Dropbox, but they are both very focused on text and not so visual. To be successful, a new product would need to be distinct, fun, visual, while keeping it functionality simple and clear. See the full analysis here.</p><br>
+          <h5>SURVEYS</h5>
+          <p>I employed a short survey to investigate how people currently use Cloud Storage systems and other relevant habits. How do they save important or interesting things they find on the internet? Do they share these files with others, and if so how? What problems do they run into? Are they interested in getting more organized, or having a single storage spot for everything?
+
+          My 40 respondents indicated that while they already use a cloud storage system, they are open to new and improved ones. The survey validated the client’s idea and provided insights into how people actually use these products, and what real people are actually looking for.
+          See the Survey and its Results.</p>
+          <ul>
+            <li>75% Screenshot Info from the Web</li>
+            <li>82% share through text/email</li>
+            <li>55% have items to big for text/email</li>
+            <li>65% prioritize easy search funcitons</li>
+            <li>67% interested in getting organized</li>
+            <li>46% prefer Search Bar to find info</li>
+          </ul>
+          <br>
+          <h5>USER PERSONAS</h5>
+          <p>Based on the overarching trends of my survey, two distinct personas emerged, each with different needs from a cloud storage system:
+          </p>
+          <section class="userPersona">
+            <img src="images/Skipper-Circle-Image.png">
+            <h4>Skipper Benneton</h4>
+            <h5>CAPTURE & DISCOVER</h5>
+            <h6>"I wish my phone would just group the images for me"</h6><br>
+            <ul class="goals"><h6>GOALS</h6>
+              <li>Collecting interesting images without worrying about space or if she loses her phone.</li>
+              <li>Having images automatically grouped into easily accessible categories.</li>
+              <li>To easily display her artwork in a quick, casual way.</li>
+            </ul><br>
+            <ul class="frustrations"><h6>FRUSTRATIONS</h6>
+              <li>Her iCloud always seems to full and pestering her to pay for an upgrade.</li>
+              <li>Not being able to find that image she saved a few weeks ago.</li>
+              <li>Organizing her files into folders takes time she doesn’t have.</li>
+            </ul>
+          </section>
+          <section class="userPersona">
+            <img src="images/Michael-Circle-Image.png">
+            <h4>Michael Bell</h4>
+            <h5>COLLABORATE & DELIVER</h5>
+            <h6>"I need different layouts based on the type of information at hand"</h6><br>
+            <ul class="goals"><h6>GOALS</h6>
+              <li>Keeps an eye on team’s progress without disrupting them.</li>
+              <li>Wants to see thumbnails of images, and text within text files.</li>
+              <li>Not having to worry about client’s technical savviness.</li>
+            </ul><br>
+            <ul class="frustrations"><h6>FRUSTRATIONS</h6>
+              <li>Confusion between team discussion different versions of the same project.</li>
+              <li>Important details sometimes hidden based on file type.</li>
+              <li>Clients confused about how to receive their product.</li>
+            </ul><br>
+            <p>Both personas want quick visuals of what the files they need, but their use of folders is where they diverge. Skipper would rather have her files automatically-organized for her, saving time and mental energy. Michael’s company uses a stricter file management protocol and will be setting up his own folders accordingly so that his team is all on the same page.<br>
+            Equipped with my Cloud Storage market research and fleshed-out User Personas, I started building the features that would make up the app, tailored to real users’ needs.</p>
+          </section><br>
+        <!-- INFO ARCH ---->
+        <section id="InfoArch">
+          <h4>INFORMATION ARCHITECTURE</h4>
+          <img src="images/wireframes-sketches-detail.png">
+          <h5>USER STORIES</h5>
+          <p>I created a list of User Stories, actions that our users would need to undertake while using the app, and then sorted them by priority. At the very top of these priority lists were account creation, adding files to their storage, and searching these files out. As a revenue generator, it’s imperative users are able to upgrade to a paid-subscription account. See all the user stories here.</p>
+          <h6>"As a new user, I want to upload a file"</h6>
+          <h6>"As a returning user, I want to scroll through a list of things I've saved"</h6>
+          <h6></h6>
+          <p>This process prescribed the minimum viable product for Kernel to be successful: a cloud storage app where users can upload and store, view, download, and share files. Users can decide how to specifically sort their files, or let the app take care of it for them. </p>
+        <!-- BRANDING & VIZ DESIGN ---->
+        <!-- TESTING ---->
+        <!-- CONCLUSION ---->
+        <!-- END OF STUDY ---->

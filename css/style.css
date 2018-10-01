@@ -1,11 +1,13 @@
-* {
+/* {
   box-sizing: border-box;
 }
 
 body {
   background-color: #18282A;
 }
-
+.caseNav {
+  background-color: #fff;
+}
 footer p {
     color: #1FB89C;
     background-color: #18282A;
@@ -16,14 +18,16 @@ footer p {
   height: auto;
 }
 nav {
-  background: #1FB89C;
+  background-color: #1FB89C;
 }
+
+
 p {
   color: #ffffff;
 /*  margin-top: .5rem;
   line-height: 1.3em;*/
 }
-
+/*
 h1 {
   font-size: 1.7rem;
 }
@@ -33,17 +37,18 @@ h1 {
   width: 300px;
   height: 15px;
 }*/
+/*
 .container {
   background-color: #18282A;
   width: 95%;
   margin: 0 auto;
 }
-
+/*
 .hero {
   padding: 2rem;
 /*  width: 100%;
   margin: 0;*/
-  background-image: linear-gradient(#1FB89C,#2F4D52);
+/*  background-image: linear-gradient(#1FB89C,#2F4D52);
 }
 
 .slide {
@@ -53,7 +58,7 @@ h1 {
 }
 
 /*tablet*/
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
   .container {
     background-color: yellow;
     width: 80%;
