@@ -3,54 +3,44 @@
   <head>
     <title>Portfolio | Daniel Gaines</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/newstyle.css">
     <!--font-awesome links-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <!--Top Navigation-->
-      <nav>
-        <img src="images/Logo-DG-70px.trns.png" alt="DG">
-        <div class="navlinks">
-          <ul>
-            <li>WORK</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
-          </ul>
-        </div>
-      </nav>
-      <!--Hero Section-->
-      <section class="hero">
-        <h1>Hi! I'm Daniel Gaines, a UX designer in San Francisco, focused on digital experiences with typography and motion interactions.</h1>
-      </section>
+      <div class="welcome-wrapper">
+        <nav class="navbar">
+          <img src="images/Logo-DG-70px.trns.png" alt="DG">
+          <div class="navlinks">
+            <ul>
+              <li>WORK</li>
+              <li>ABOUT</li>
+              <li>CONTACT</li>
+            </ul>
+          </div>
+        </nav>
+        <!--Hero Section-->
+        <section class="hero">
+          <h1>Hi! I'm Daniel Gaines, a UX designer in San Francisco, focused on digital experiences with typography and motion interactions.</h1>
+        </section>
+      </div>
+
       <!--Case Study Slides-->
       <section class="slide">
         <h1>Kernel</h1>
-          <img src="images/iphones-app-image.png" alt="Kernel">
+          <img src="images/CASE-HERO-DARK.png" alt="Kernel">
           <h2>Cloud Storage for casual & professional users alike.</h2>
           <h3>UX RESEARCH • BRANDING & VISUAL DESIGN</h3>
           <input type="button" value="VIEW CASE STUDY">
       </section>
-      <section class="slide">
-        <h1>Case Study 2</h1>
-        <img src="images/iphones-app-image.png" alt="Kernel thumbnail">
-        <h2>Stuff to Come, Still gotta make it.</h2>
-        <h3>UX RESEARCH • INTERACTION DESIGN • ANIMATIONS</h3>
-        <input type="button" value="VIEW CASE STUDY">
-      </section>
-      <section class="slide">
-        <h1>Case Study 3</h1>
-        <img src="images/iphones-app-image.png" alt="Case Study thumbnail">
-        <h2>Stuff to Come, Still gotta make it.</h2>
-        <h3>ILLUSTRATIONS • WIREFRAMING</h3>
-        <input type="button" value="VIEW CASE STUDY">
-      </section>
       <!--Footer-->
-      <footer>
+      <footer class="footerbar">
         <p>Thanks for stopping by. Hit me up if you'd like to chat!
         </p>
-        <ul class="footer-link-list">
+        <ul id="footer-link-list">
           <li>
             <a href="mailto:dannygaines@gmail.com">
               <i class="fa fa-envelope-square" aria-hidden="true"></i>
