@@ -92,7 +92,7 @@ body {
 .slide h3 {
   font-family: 'work sans', sans-serif;
   font-size: 1.2rem;
-  font-weight: lighter;
+  font-weight: 100;
   padding-left: 2.4rem;
   padding-top: 2.2rem;
 
@@ -134,6 +134,7 @@ body {
 .footerbar {
   background-color: var(--dark);
   color: var(--accentgreen);
+  padding-bottom: 2rem;
 }
 .footerbar h4 {
   padding: 12rem 2.4rem 4.5rem 2.4rem;

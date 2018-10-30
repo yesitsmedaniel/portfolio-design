@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Study | Daniel Gaines</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
     <!--font-awesome links-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <nav class="caseNav">
-        <img src="images/Logo-DG-70px.trns.png" alt="DG Logo">
-        <div class="navLinks">
-          <ul>
-            <li>WORK</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
+          <ul class="navLinks">
+            <li><img class="logo" src="images/Logo-DG-70px.trns.png" alt="DG Logo"></li>
+            <li class="navlink">WORK</li>
+            <li class="navlink">ABOUT</li>
+            <li class="navlink">CONTACT</li>
           </ul>
-        </div>
       </nav>
       <!-- CASE HERO -->
       <section id="CaseStudyHero">
@@ -28,235 +30,314 @@
       <ul class="rowOfContents">
         <li>INTRO</li>
         <li>RESEARCH</li>
-        <li>INFORMATION ARCHITECTURE</li>
-        <li>BRANDING & VISUAL DESIGN</li>
+        <li id="informationarchitecture">IA</li>
+        <li>DESIGN</li>
         <li>TESTING</li>
         <li>CONCLUSION</li>
       </ul><br>
+
         <!-- INTRO -->
-        <h1>KERNEL</h1>
-        <h3>UX RESEARCH • BRANDING & VISUAL DESIGN</h3>
-        <h2>Making Cloud Storage fun, fast, and easy - for both casual and professional users.</h2>
-        <br>
-        <p>Our digital info is scattered across messy and disconnected storage systems. As it piles up, our files gets harder to find, and thus harder to share with others. Everyone uses their drives differently so there’s no one-size-fits-all solution.<br>
+        <section id="intro">
+          <h1>KERNEL</h1>
+          <h3>UX RESEARCH • BRANDING & VISUAL DESIGN</h3>
+          <h2>Making Cloud Storage fun, fast, and easy - for both casual and professional users.</h2>
+          <br>
+          <div class="paragraphBlock">
+            <p>Our digital info is scattered across messy and disconnected storage systems. As it piles up, our files gets harder to find, and thus harder to share with others. Everyone uses their drives differently so there’s no one-size-fits-all solution.<br>
 
-        Kernel lets users store, share, and collaborate on digital files, all in one place. Users’ needs & approaches vary, so Kernel enables them with multiple search-options and flexible views. Easy previewing and auto-sorting saves time and energy so users can focus on their real goal.<br>
-        <input type="button" value="CLICKABLE PROTOTYPE"><br>
+            Kernel lets users store, share, and collaborate on digital files, all in one place. Users’ needs & approaches vary, so Kernel enables them with multiple search-options and flexible views. Easy previewing and auto-sorting saves time and energy so users can focus on their real goal.</p>
+            <input class="protoButton" type="button" value="CLICKABLE PROTOTYPE">
+            <p>Challenged with finding a spot in the already-crowded Cloud Storage market, my work began with researching the competition and habits of those who could benefit from the project. </p>
+          </div>
 
-        <p>Challenged with finding a spot in the already-crowded Cloud Storage market, my work began with researching the competition and habits of those who could benefit from the project. </p>
+        </section>
         <br>
         <!-- RESEARCH -->
-        <section id="Research">
+        <section id="research">
           <h4>RESEARCH</h4>
-          <img src="images/research-hero-image.png" alt="Research Section Image">
+          <img class="categoryImage" src="images/research-hero-image.png" alt="Research Section Image">
           <h5>COMPETITIVE ANALYSIS</h5>
-          <p>First I studied existing cloud storage systems out there to see where Kernel could fit in:</p>
-          <ul id="GoogleDrive">
-            <li><img src="images/googledrive_logo.png" alt="Google Drive"></li>
-            <li>+ Widely used</li>
-            <li>+ offers losts of free space</li>
-            <li>+ connected to Google Suite</li>
-            <li>- Interface is messy and dense</li>
-          </ul>
-          <ul id="Dropbox">
-            <li><img src="images/app-dropbox-windows@2x.png" alt="Dropbox"></li>
-            <li>+ Well-known</li>
-            <li>+ Utility is understood</li>
-            <li>- Dry & Clunky</li>
-            <li>- Text-heavy</li>
-          </ul>
-          <ul id="Evernote">
-            <li><img src="images/evernote-logo.png" alt="Evernote"></li>
-            <li>+ Visually rich</li>
-            <li>+ Distinct Branding</li>
-            <li>- Not well-known</li>
-            <li>- Bloated with features</li>
-          </ul>
-
-          <p>The competition is tough with giants like Google and Dropbox, but they are both very focused on text and not so visual. To be successful, a new product would need to be distinct, fun, visual, while keeping it functionality simple and clear. See the full analysis here.</p><br>
-          <h5>SURVEYS</h5>
-          <p>I employed a short survey to investigate how people currently use Cloud Storage systems and other relevant habits. How do they save important or interesting things they find on the internet? Do they share these files with others, and if so how? What problems do they run into? Are they interested in getting more organized, or having a single storage spot for everything?
-
-          My 40 respondents indicated that while they already use a cloud storage system, they are open to new and improved ones. The survey validated the client’s idea and provided insights into how people actually use these products, and what real people are actually looking for.
-          See the Survey and its Results.</p>
-          <ul>
-            <li>75% Screenshot Info from the Web</li>
-            <li>82% share through text/email</li>
-            <li>55% have items to big for text/email</li>
-            <li>65% prioritize easy search funcitons</li>
-            <li>67% interested in getting organized</li>
-            <li>46% prefer Search Bar to find info</li>
-          </ul>
-          <br>
-          <h5>USER PERSONAS</h5>
-          <p>Based on the overarching trends of my survey, two distinct personas emerged, each with different needs from a cloud storage system:
-          </p>
-          <section class="userPersona">
-            <img src="images/Skipper-Circle-Image.png" alt="Skipper Image">
-            <h4>Skipper Benneton</h4>
-            <h5>CAPTURE & DISCOVER</h5>
-            <h6>"I wish my phone would just group the images for me"</h6><br>
-            <h6>GOALS</h6>
-            <ul class="goals">
-              <li>Collecting interesting images without worrying about space or if she loses her phone.</li>
-              <li>Having images automatically grouped into easily accessible categories.</li>
-              <li>To easily display her artwork in a quick, casual way.</li>
-            </ul><br>
-            <h6>FRUSTRATIONS</h6>
-            <ul class="frustrations">
-              <li>Her iCloud always seems to full and pestering her to pay for an upgrade.</li>
-              <li>Not being able to find that image she saved a few weeks ago.</li>
-              <li>Organizing her files into folders takes time she doesn’t have.</li>
+          <div class="backgroundWrapper">
+            <p>First I studied existing cloud storage systems out there to see where Kernel could fit in:</p>
+            <h6>Google Drive</h6>
+            <ul class="CompAnalItem">
+              <li class="listImage"><img src="images/googledrive_logo.png" alt="Google Drive"></li>
+              <li class="listNote">+ Widely used<br>+ offers losts of free space<br>+ offers losts of free space<br>+ connected to Google Suite<br>- Interface is messy and dense</li>
+              <!-- <li class="listNote">+ offers losts of free space</li>
+              <li class="listNote">+ connected to Google Suite</li>
+              <li class="listNote">- Interface is messy and dense</li> -->
             </ul>
-          </section>
-          <section class="userPersona">
-            <img src="images/Michael-Circle-Image.png" alt="Michael Image">
-            <h4>Michael Bell</h4>
-            <h5>COLLABORATE & DELIVER</h5>
-            <h6>"I need different layouts based on the type of information at hand"</h6><br>
-            <h6>GOALS</h6>
-            <ul class="goals">
-              <li>Keeps an eye on team’s progress without disrupting them.</li>
-              <li>Wants to see thumbnails of images, and text within text files.</li>
-              <li>Not having to worry about client’s technical savviness.</li>
-            </ul><br>
-            <h6>FRUSTRATIONS</h6>
-            <ul class="frustrations">
-              <li>Confusion between team discussion different versions of the same project.</li>
-              <li>Important details sometimes hidden based on file type.</li>
-              <li>Clients confused about how to receive their product.</li>
-            </ul><br>
-            <p>Both personas want quick visuals of what the files they need, but their use of folders is where they diverge. Skipper would rather have her files automatically-organized for her, saving time and mental energy. Michael’s company uses a stricter file management protocol and will be setting up his own folders accordingly so that his team is all on the same page.<br>
-            Equipped with my Cloud Storage market research and fleshed-out User Personas, I started building the features that would make up the app, tailored to real users’ needs.</p>
+            <h6>Dropbox</h6>
+            <ul class="CompAnalItem">
+              <li class="listImage"><img src="images/app-dropbox-windows@2x.png" alt="Dropbox"></li>
+              <li>+ Well-known<br></li>
+              <li>+ Utility is understood</li>
+              <li>- Dry & Clunky</li>
+              <li>- Text-heavy</li>
+            </ul>
+            <h6>Evernote</h6>
+            <ul class="CompAnalItem">
+              <li class="listImage"><img src="images/evernote-logo.png" alt="Evernote"></li>
+              <li>+ Visually rich</li>
+              <li>+ Distinct Branding</li>
+              <li>- Not well-known</li>
+              <li>- Bloated with features</li>
+            </ul>
+
+            <p>The competition is tough with giants like Google and Dropbox, but they are both very focused on text and not so visual. To be successful, a new product would need to be distinct, fun, visual, while keeping it functionality simple and clear. See the full analysis here.</p><br>
+          </div>
+          <h5>SURVEYS</h5>
+          <div class="backgroundWrapper">
+            <p>I employed a short survey to investigate how people currently use Cloud Storage systems and other relevant habits. How do they save important or interesting things they find on the internet? Do they share these files with others, and if so how? What problems do they run into? Are they interested in getting more organized, or having a single storage spot for everything?
+            <br>
+            <br>
+            My 40 respondents indicated that while they already use a cloud storage system, they are open to new and improved ones. The survey validated the client’s idea and provided insights into how people actually use these products, and what real people are actually looking for.
+            See the Survey and its Results.</p>
+            <ul id="results">
+              <li>75% Screenshot Info from the Web</li>
+              <li>82% share through text/email</li>
+              <li>55% have items to big for text/email</li>
+              <li>65% prioritize easy search funcitons</li>
+              <li>67% interested in getting organized</li>
+              <li>46% prefer Search Bar to find info</li>
+            </ul>
+            <br>
+          </div>
+
+          <h5>USER PERSONAS</h5>
+          <div class="backgroundWrapper">
+            <p>Based on the overarching trends of my survey, two distinct personas emerged, each with different needs from a cloud storage system:
+            </p>
+            <section class="userPersona">
+              <img class="skipper" src="images/Skipper-Circle-Image.png" alt="Skipper Image">
+              <h4>Skipper Benneton</h4>
+              <h5>CAPTURE & DISCOVER</h5>
+              <div class="quote">
+                <h6>"I wish my phone would just group the images for me"</h6>
+              </div>
+              <h6>GOALS</h6>
+              <ul class="goals">
+                <li>Collecting interesting images without worrying about space or if she loses her phone.</li>
+                <li>Having images automatically grouped into easily accessible categories.</li>
+                <li>To easily display her artwork in a quick, casual way.</li>
+              </ul><br>
+              <h6>FRUSTRATIONS</h6>
+              <ul class="frustrations">
+                <li>Her iCloud always seems to full and pestering her to pay for an upgrade.</li>
+                <li>Not being able to find that image she saved a few weeks ago.</li>
+                <li>Organizing her files into folders takes time she doesn’t have.</li>
+              </ul>
+            </section>
+            <section class="userPersona">
+              <img src="images/Michael-Circle-Image.png" alt="Michael Image">
+              <h4>Michael Bell</h4>
+              <h5>COLLABORATE & DELIVER</h5>
+              <div class="quote">
+                <h6>"I need different layouts based on the type of information at hand"</h6><br>
+              </div>
+
+              <h6>GOALS</h6>
+              <ul class="goals">
+                <li>Keeps an eye on team’s progress without disrupting them.</li>
+                <li>Wants to see thumbnails of images, and text within text files.</li>
+                <li>Not having to worry about client’s technical savviness.</li>
+              </ul><br>
+              <h6>FRUSTRATIONS</h6>
+              <ul class="frustrations">
+                <li>Confusion between team discussion different versions of the same project.</li>
+                <li>Important details sometimes hidden based on file type.</li>
+                <li>Clients confused about how to receive their product.</li>
+              </ul>
         </section><br>
+        <p>Both personas want quick visuals of what the files they need, but their use of folders is where they diverge. Skipper would rather have her files automatically-organized for her, saving time and mental energy. Michael’s company uses a stricter file management protocol and will be setting up his own folders accordingly so that his team is all on the same page.<br>
+        Equipped with my Cloud Storage market research and fleshed-out User Personas, I started building the features that would make up the app, tailored to real users’ needs.</p>
+          </div>
         </section>
         <!-- INFO ARCH -->
         <section id="InfoArch">
           <h4>INFORMATION ARCHITECTURE</h4>
-          <img src="images/wireframes-sketches-detail.png" alt="Information Architecture Image">
+          <img class="categoryImage"   src="images/wireframes-sketches-detail.png" alt="Information Architecture Image">
           <h5>USER STORIES</h5>
-          <p>I created a list of User Stories, actions that our users would need to undertake while using the app, and then sorted them by priority. At the very top of these priority lists were account creation, adding files to their storage, and searching these files out. As a revenue generator, it’s imperative users are able to upgrade to a paid-subscription account. See all the user stories here.</p>
-          <h6>"As a new user, I want to upload a file"</h6>
-          <h6>"As a returning user, I want to scroll through a list of things I've saved"</h6>
-          <h6>"As a new user, I want to register for an account"</h6>
-          <p>This process prescribed the minimum viable product for Kernel to be successful: a cloud storage app where users can upload and store, view, download, and share files. Users can decide how to specifically sort their files, or let the app take care of it for them. </p>
+          <div class="backgroundWrapper">
+            <p>I created a list of User Stories, actions that our users would need to undertake while using the app, and then sorted them by priority. At the very top of these priority lists were account creation, adding files to their storage, and searching these files out. As a revenue generator, it’s imperative users are able to upgrade to a paid-subscription account. See all the user stories here.</p>
+            <div class="quote">
+              <h6>"As a new user, I want to upload a file"</h6>
+            </div>
+            <div class="quote">
+              <h6>"As a returning user, I want to scroll through a list of things I've saved"</h6>
+            </div>
+            <div class="quote">
+              <h6>"As a new user, I want to register for an account"</h6>
+            </div>
+
+            <p>This process prescribed the minimum viable product for Kernel to be successful: a cloud storage app where users can upload and store, view, download, and share files. Users can decide how to specifically sort their files, or let the app take care of it for them. </p>
+          </div>
           <h5>USER FLOWS & SITE MAP</h5>
-          <p>I diagrammed flows of the most high priority user stories to make sure these tasks could be accomplished quickly and without too many clicks. Additionally, I wanted to include multiple routes to find files, based on a given user’s preferred approach. I built the Sitemap to flesh out all the screens that would require wireframe modeling. Check them out here.</p>
-          <img src="images/userflows-kernel.01b.png" alt="">
-          <img src="images/UserFlow-diagram.png" alt="">
+          <div class="backgroundWrapper">
+            <p>I diagrammed flows of the most high priority user stories to make sure these tasks could be accomplished quickly and without too many clicks. Additionally, I wanted to include multiple routes to find files, based on a given user’s preferred approach. I built the Sitemap to flesh out all the screens that would require wireframe modeling. <b>Check them out here</b>.</p>
+            <img class="userFlowImage" src="images/userflows-kernel.01b.png" alt="">
+            <img class="userFlowImage"src="images/UserFlow-diagram.png" alt="">
+          </div>
+
           <h5>WIREFRAMES</h5>
-          <p>I sketched many iterations of Kernel’s dashboard, with the following primary goals:
-          <ul>
-            <li>Balancing the multiple search features (search bar, list, and folder system)</li>
-            <li>A prominent "ADD" button</li>
-            <li>An uncluttered space that is relaxing and welcoming to the user’s eye.</li>
-          </ul>
-          <img src="images/wireframes-kernel.03.png" alt="wireframes">
-          <img src="images/wireframes-kernel.02.png" alt="wireframes closeup">
-          <img src="images/wireframes-kernel.png" alt="wireframe details">
-          <img src="images/CloudStorage-Home.png" alt="Kernel Dashboard">
-          <img src="images/CloudStorage-ADDITEM.png" alt="Add Item">
-          <img src="images/CloudStorage-Options.png" alt="options">
-          <p>I translated my paper sketches into rough digital format using Balsamiq. I then recruited subjects for remote usability testing. This quickly identified some trouble spots:
-          <ul>
-            <li>Welcome screen didn’t clarify the product’s purpose or function, the users were confused.</li>
-            <li>Confusion between the critical “Add Item” button and the lower priority “Add New Folder” button.</li>
-          </ul>
-          <p>I’d have to make the Welcome Page more clear and defined, and invite the users down the page to continue learning. Significant adjustments to the dashboard would have to be made to keep things simple and clear.  With this initial feedback on the basic interface, I was ready to craft an identity for the product and bring the project one step closer to fruition.</p><br>
+          <div class="backgroundWrapper">
+            <p>I sketched many iterations of Kernel’s dashboard, with the following primary goals:
+            <ul>
+              <li>Balancing the multiple search features (search bar, list, and folder system)</li>
+              <li>A prominent "ADD" button</li>
+              <li>An uncluttered space that is relaxing and welcoming to the user’s eye.</li>
+            </ul>
+            <div class="sketchPhotos">
+              <img src="images/wireframes-kernel.02.png" alt="wireframes closeup">
+              <img src="images/wireframes-kernel.png" alt="wireframe details">
+              <img src="images/wireframes-kernel.03.png" alt="wireframes">
+              <img src="images/CloudStorage-Home.png" alt="Kernel Dashboard">
+              <img src="images/CloudStorage-ADDITEM.png" alt="Add Item">
+              <img src="images/CloudStorage-Options.png" alt="options">
+            </div>
+
+            <p>I translated my paper sketches into rough digital format using Balsamiq. I then recruited subjects for remote usability testing. This quickly identified some trouble spots:
+            <ul>
+              <li>Welcome screen didn’t clarify the product’s purpose or function, the users were confused.</li>
+              <li>Confusion between the critical “Add Item” button and the lower priority “Add New Folder” button.</li>
+            </ul>
+            <p>I’d have to make the Welcome Page more clear and defined, and invite the users down the page to continue learning. Significant adjustments to the dashboard would have to be made to keep things simple and clear.  With this initial feedback on the basic interface, I was ready to craft an identity for the product and bring the project one step closer to fruition.</p><br>
+          </div>
         </section>
         <!-- BRANDING & VIZ DESIGN -->
         <section id="brandingDesign">
           <h4>BRANDING & VISUAL DESIGN</h4>
-          <img src="images/branding-hero-image.png" alt="Branding Image">
+          <img class="categoryImage" src="images/branding-hero-image.png" alt="Branding Image">
           <h5>LOGO DESIGN</h5>
-          <p>Kernel needs a modern aesthetic that shows it can compete with its competitors like Google Drive and Dropbox, but infusing it with bold and fun colors so it can stand out, with an illustrative style to maintain a light-hearted sensibility. <br>
-          <br>
-          I used mind-mapping techniques and sketching to zero in on a the idea of a popcorn bucket - and the metaphor of a kernel as an idea that our users want to store. Rather than going too literal- my logo developed from the idea of the kernel bursting into it’s popped shape, and melding that with the letter K for Kernel. I chose Dosis for the Logotype, button text and technical information, while using Lato for paragraph and conversational text.
-          </p>
-          <img src="images/branding.kernel-sketches.01.png" alt="branding sketches">
-          <img src="images/logo-sketches-kernel.01.png" alt="logo sketches">
-          <img src="images/kernel-dissected.png" alt="Dissected Logo">
-          <img src="images/Purple-Back-Logo.png" alt="Purple Logo">
-          <img src="images/Yellow-Back-Logo.png" alt="Yellow Logo"><br>
+          <div class="backgroundWrapper">
+            <p>Kernel needs a modern aesthetic that shows it can compete with its competitors like Google Drive and Dropbox, but infusing it with bold and fun colors so it can stand out, with an illustrative style to maintain a light-hearted sensibility. <br>
+            <br>
+            I used mind-mapping techniques and sketching to zero in on a the idea of a popcorn bucket - and the metaphor of a kernel as an idea that our users want to store. Rather than going too literal- my logo developed from the idea of the kernel bursting into it’s popped shape, and melding that with the letter K for Kernel. I chose Dosis for the Logotype, button text and technical information, while using Lato for paragraph and conversational text.
+            </p>
+            <div class="brandPhotos">
+              <img src="images/branding.kernel-sketches.01.png" alt="branding sketches">
+              <img src="images/logo-sketches-kernel.01.png" alt="logo sketches">
+              <img src="images/kernel-dissected.png" alt="Dissected Logo">
+              <img src="images/Purple-Back-Logo.png" alt="Purple Logo">
+              <img src="images/Yellow-Back-Logo.png" alt="Yellow Logo"><br>
+            </div>
+
+          </div>
+
           <h5>COLOR SCHEME</h5>
-          <div class="colorSchemeDots">
-            <section class="oneDot">
-              <span class="dot purple"></span>
-              <p>PEPPER PURPLE</p><br>
-              <p>#1E1651</p>
-            </section>
-            <section class="oneDot">
-              <span class="dot red"></span>
-              <p>SRIRACHA RED</p><br>
-              <p>#FF3864</p>
-            </section>
-            <section class="oneDot">
-              <span class="dot orange"></span>
-              <p>GILDKERNEL</p><br>
-              <p>#F4C95D</p>
-            </section>
-            <section class="oneDot">
-              <span class="dot yellow"></span>
-              <p>SUNBUTTER</p><br>
-              <p>#F1FF7A</p>
-            </section>
-            <section class="oneDot">
-              <span class="dot light"></span>
-              <p>SALTMINE</p><br>
-              <p>#EFEDCE</p>
-            </section>
+          <div class="backgroundWrapper">
+            <div class="colorSchemeDots">
+              <section class="oneDot">
+                <span class="dot purple"></span>
+                <p>PEPPER PURPLE</p><br>
+                <p>#1E1651</p>
+              </section>
+              <section class="oneDot">
+                <span class="dot red"></span>
+                <p>SRIRACHA RED</p><br>
+                <p>#FF3864</p>
+              </section>
+              <section class="oneDot">
+                <span class="dot orange"></span>
+                <p>GILDKERNEL</p><br>
+                <p>#F4C95D</p>
+              </section>
+              <section class="oneDot">
+                <span class="dot yellow"></span>
+                <p>SUNBUTTER</p><br>
+                <p>#F1FF7A</p>
+              </section>
+              <section class="oneDot">
+                <span class="dot light"></span>
+                <p>SALTMINE</p><br>
+                <p>#EFEDCE</p>
+              </section>
+            </div>
           </div>
+
           <h5>ICONS & IMAGERY</h5>
-          <div class="iconImages">
-          <img src="images/branding-sketches.png" alt="branding sketches">
-          <img src="images/usage-sketches.png" alt="usage sketches">
-          <img src="images/icons-laptop.png" alt="laptop">
-          <img src="images/icons-bucket.png" alt="bucket">
-          <img src="images/icons-folders.png" alt="folders">
-          <img src="images/icons-color.png" alt="color">
+          <div class="backgroundWrapper">
+            <div class="iconImages">
+              <img src="images/branding-sketches.png" alt="branding sketches">
+              <img src="images/usage-sketches.png" alt="usage sketches">
+              <img src="images/icons-laptop.png" alt="laptop">
+              <img src="images/icons-bucket.png" alt="bucket">
+              <img src="images/icons-folders.png" alt="folders">
+              <img src="images/icons-color.png" alt="color">
+            </div>
           </div>
+
         </section>
         <!-- TESTING -->
         <section id="testing">
           <h4>TESTIING</h4>
-            <img src="images/Testing-hero.png" alt="Testing Image">
+            <img class="categoryImage" src="images/Testing-hero.png" alt="Testing Image">
             <h5>PROTOTYPE & PREFERENCE TESTING</h5>
-            <p>I took all my branding assets and fit them into my wireframes, to create a Hi-Fidelity prototype using the Invision App, testing both its functionality, and if the visual design was well-received by the users.<br>
-            The specific User Task tests were successful, however I still sensed an unclear purpose; who this app was for. As much as the bold “GET STARTED” button directed them, they wanted to interact with the top right of the Landing Page in a way that they could not. I also realized that the Home Page rolled out the content too slowly and I was forcing my users to piece together a puzzle, rather than properly introducing them to Kernel. I’d still have to make some <br>
-            Personally I felt my dashboard was a little bland, and wanted statistical feedback to justify more color. The results were overwhelmingly in favor of more color - but one “against” comment stood out:</p><br>
-            <h6>“The White Background gives me the illusion to free space or empty space.. and for cloud storage you want something not cluttered, and you want, well, space.”</h6>
-            <p>I took this conceptual critique and applied it where it was really needed - the landing page. The saturated and bold colors created a heavy weight that wasn’t the right vibe. I decided to give it an overhaul based on what I’d learned.</p>
+            <div class="backgroundWrapper">
+              <p>I took all my branding assets and fit them into my wireframes, to create a Hi-Fidelity prototype using the Invision App, testing both its functionality, and if the visual design was well-received by the users.<br>
+              The specific User Task tests were successful, however I still sensed an unclear purpose; who this app was for. As much as the bold “GET STARTED” button directed them, they wanted to interact with the top right of the Landing Page in a way that they could not. I also realized that the Home Page rolled out the content too slowly and I was forcing my users to piece together a puzzle, rather than properly introducing them to Kernel. I’d still have to make some <br>
+              Personally I felt my dashboard was a little bland, and wanted statistical feedback to justify more color. The results were overwhelmingly in favor of more color - but one “against” comment stood out:</p><br>
+              <h6>“The White Background gives me the illusion to free space or empty space.. and for cloud storage you want something not cluttered, and you want, well, space.”</h6>
+              <p>I took this conceptual critique and applied it where it was really needed - the landing page. The saturated and bold colors created a heavy weight that wasn’t the right vibe. I decided to give it an overhaul based on what I’d learned.</p>
+            </div>
+
             <h5>VERSION 2 ADJUSTMENTS</h5>
-            <p>I pulled out 90% of the background color to let the Landing Page breathe. I realized not every color from my scheme’s arsenal needed to be applied, which simplified everything. I built a Features List which not only spelled out what Kernel is specifically about, but also lead the viewer further down the page. I took a more Responsive Design approach and considered how the static assets would condense as the browser shrinks. Finally I condensed and simplified the vertical real estate at the top of the dash.</p>
-            <h6>VERSION 1</h6>
-            <img src="images/version1-img.png" alt="">
-            <h6>VERSION 2</h6>
-            <img src="images/version2-img.png" alt="">
-            <p>I fleshed out and expanded the access to the sign up process - further delineating the specific information needed for each plan. As the user signs in for the first time - the empty states guide the user to action.</p>
-            <h6>LANDING PAGE</h6>
-            <img src="images/Welcome.png" alt="">
-            <h6>DASHBOARD SCREENS</h6>
-            <img src="images/EmptyState.png" alt="empty state">
-            <img src="images/Dash-revamp.png" alt="Dashboard">
-            <img src="images/Grandma-Grampa.png" alt="Grandma + Grampa">
-            <p>Check out the Invision prototype and see how it works!</p>
-            <input type="button" value="CLICKABLE PROTOTYPE">
+            <div class="backgroundWrapper">
+              <p>I pulled out 90% of the background color to let the Landing Page breathe. I realized not every color from my scheme’s arsenal needed to be applied, which simplified everything. I built a Features List which not only spelled out what Kernel is specifically about, but also lead the viewer further down the page. I took a more Responsive Design approach and considered how the static assets would condense as the browser shrinks. Finally I condensed and simplified the vertical real estate at the top of the dash.</p>
+              <div class="versionCompare">
+                <div class="vers1">
+                  <h6>VERSION 1</h6>
+                  <img src="images/version1-img.png" alt="">
+                </div>
+                <div class="vers2">
+                  <h6>VERSION 2</h6>
+                  <img src="images/version2-img.png" alt="">
+                </div>
+              </div>
+
+              <p>I fleshed out and expanded the access to the sign up process - further delineating the specific information needed for each plan. As the user signs in for the first time - the empty states guide the user to action.</p>
+              <div class="hiFis">
+                <div class="landing">
+                  <h6>LANDING PAGE</h6>
+                  <img src="images/Welcome.png" alt="">
+                </div>
+                <div class="dashes">
+                  <h6>DASHBOARD SCREENS</h6>
+                  <img src="images/EmptyState.png" alt="empty state">
+                  <img src="images/Dash-revamp.png" alt="Dashboard">
+                  <img src="images/Grandma-Grampa.png" alt="Grandma + Grampa">
+                </div>
+
+              </div>
+
+              <p>Check out the Invision prototype and see how it works!</p>
+              <input type="button" value="CLICKABLE PROTOTYPE">
+            </div>
+
         </section>
         <!-- CONCLUSION -->
         <section id="conclusion">
           <h4>CONCLUSION</h4>
-            <p>Kernel’s logo, branding concept and visual design created a visually distinct system breathing some whimsy and life into the bland existing market. The UI proved itself to be intuitive and navigable in repeated tests. Its array of features satisfy our client’s MVP and make Kernel a contender in the cloud storage marketplace. <br>More time spent in the initial research and ideation phase could have yielded a sharper or loftier concept to set itself even further apart from the competition. Specifically, by digging even deeper into existing user habits and trends with extended surveys and follow-up questions; mining more valuable insights from there.<br>With more time, I would like to carry the illustrations further through the app,  and refine them through more iterations. Finally, the most valuable learning came from the feedback of others. External points of view triggered my most valuable insights on the problems and solutions at hand - that of making a product that works for the user.</p>
+          <div class="backgroundWrapper">
+              <p>Kernel’s logo, branding concept and visual design created a visually distinct system breathing some whimsy and life into the bland existing market. The UI proved itself to be intuitive and navigable in repeated tests. Its array of features satisfy our client’s MVP and make Kernel a contender in the cloud storage marketplace.<br>
+              <br>
+              More time spent in the initial research and ideation phase could have yielded a sharper or loftier concept to set itself even further apart from the competition. Specifically, by digging even deeper into existing user habits and trends with extended surveys and follow-up questions; mining more valuable insights from there.<br><br>With more time, I would like to carry the illustrations further through the app,  and refine them through more iterations. Finally, the most valuable learning came from the feedback of others. External points of view triggered my most valuable insights on the problems and solutions at hand - that of making a product that works for the user.</p>
+          </div>
+
+
         </section>
         <!-- END OF STUDY -->
         <section id="endOfStudy">
-        <p>That’s the end of this case study!</p>
-        <input type="button" value="BACK TO TOP">
-        <input type="button" value="PREVIOUS">
-        <input type="button" value="NEXT CASE STUDY">
+          <div class="quote">
+            <h6>That's the end of this case study!</h6>
+          </div>
+          <input type="button" value="BACK TO TOP">
+          <input type="button" value="PREVIOUS">
+          <input type="button" value="NEXT CASE STUDY">
         </section>
-        <footer>
-          <p>Thanks for stopping by. Hit me up if you'd like to chat!
-          </p>
+        <!-- HERE IS THE FOOTER  -->
+        <footer class="footerbar">
+          <h4>Thanks for stopping by. Hit me up if you'd like to chat!</h4>
           <ul class="footer-link-list">
             <li>
               <a href="mailto:dannygaines@gmail.com">

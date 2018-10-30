@@ -1,0 +1,293 @@
+:root {
+  --accentgreen: #1FB89C;
+  --truebase: #2f4d52;
+  --dark: #18282A;
+  --lightgrey: #F7F8F8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'work sans', sans-serif;
+  font-size: 1.8rem;
+  background-color: white;
+  color: var(--dark);
+
+}
+                        /* THIS IS THE NAVBAR  */
+.navLinks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo {
+  flex-grow: 1;
+}
+#CaseStudyHero img{
+  width: 100%;
+  height: 24.8rem;
+  object-fit: cover;
+  object-position: left;
+}
+.navlink {
+  /* border: 2px solid blue; */
+  font-size: 1.6rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  color: var(--truebase);
+
+}
+                      /* THIS IS THE ROW OF CONTENTS */
+.rowOfContents {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--lightgrey);
+  color: var(--truebase);
+  font-weight: 100;
+  justify-content: center;
+}
+.rowOfContents li {
+  font-size: 1.4rem;
+  padding: 1.6rem;
+}
+                    /* THIS IS THE INTRO SECTION */
+#intro h1 h2 h3 p {
+  padding-left: 2.4rem;
+}
+h1 {
+  font-size: 2.25rem;
+  color: var(--truebase);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-left: 2.2rem;
+  padding-top: 3rem;
+}
+
+h3 {
+  font-family: 'work sans', sans-serif;
+  color: var(--truebase);
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding: 1.5rem 2.2rem 0rem 2.2rem;
+}
+h2 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--truebase);
+  padding: 2.2rem;
+  line-height: 2.8rem;
+}
+
+p {
+  color: var(--dark);
+  font-family: 'Source Serif Pro', serif;
+  padding: 2.2rem;
+  line-height: 125%;
+}
+#intro p {
+  color: var(--truebase);
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  padding: 2.2rem;
+}
+.paragraphBlock {
+  background-color: var(--lightgrey);
+}
+.protoButton {
+    /* display: flex; */
+    background-color: var(--lightgrey);
+   border: 2px solid var(--truebase);
+   border-radius: 5px;
+   color: var(--truebase);
+   margin: 2.2rem;
+   padding: 0.7rem 2.9rem;
+   text-align: left;
+   text-decoration: none;
+   font-size: 1.2rem;
+}
+
+                      /* THIS IS THE RESEARCH SECTION */
+h4 {
+  font-size: 2.2rem;
+  padding: 4.6rem 2.2rem 1.6rem 2.2rem;
+  color: var(--truebase);
+}
+.categoryImage {
+  /* height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  border-radius: 5px;
+  width: 100%;
+  min-height: 20rem;
+  max-height: 30rem;
+  object-fit: cover;
+  object-position: left;
+  padding: 0 .8rem 4.6rem .8rem;
+}
+
+h5 {
+  padding: 2.2rem;
+}
+
+#research p {
+  padding: 2.2rem;
+  font-family: 'Source Serif Pro', serif;
+  line-height: 2.8rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+  padding-left: 2.2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.quote h6 {
+  text-transform: none;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  padding-bottom: 2.2rem;
+}
+.backgroundWrapper{
+  background-color: var(--lightgrey);
+  margin-bottom: 10rem;
+}
+.CompAnalItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2.2rem;
+}
+.CompAnalItem li{
+  font-size: 1.4rem;
+  line-height: 135%;
+}
+.listImage img {
+  /* align-self: : center;
+  justify-self: center; */
+  border-radius: 1rem;
+  width: 120px;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+}
+.listNote {
+  justify-content: center;
+}
+
+#results {
+  padding: 2.2rem;
+}
+
+.userPersona {
+  background-color: white;
+  border-radius: 5px;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+  margin: 0.8rem;
+  padding: 2.2rem;
+}
+.userPersona li {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.4rem;
+  line-height: 2.08rem;
+}
+.skipper {
+  border: 10px solid #422d3c;
+  border-radius: 50%;
+}
+
+                          /* THIS IS THE INFO ARCH SECTION: ; */
+.userFlowImage {
+  border-radius: 6px;
+  margin: 0rem 2.2rem 1.6rem 2.2rem;
+  max-width: 100%;
+  max-height:31rem;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+  /* object-fit: cover; */
+}
+.sketchPhotos{
+  display: flex;
+  flex-wrap: wrap;
+}
+.brandPhotos img, .sketchPhotos img, .iconImages img{
+    margin: 1.2rem 2.2rem;
+    border-radius: 5px;
+    height: 30rem;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+
+}
+.versionCompare {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  object-fit: contain;
+}
+.vers1 img, .vers2 img {
+  padding: .8rem;
+  width:100%;
+}
+
+.hiFis {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-rows: 2fr 2fr 2fr; */
+  /* grid-template-areas:
+  "landing dashes"
+  "dashes dashes"
+  "landing dashes" */
+}
+.landing img, .dashes img{
+  width: 100%;
+  margin: 0.8rem 0.8rem 2.2rem 0.8rem;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+  /* grid-area: "landing"; */
+}
+
+.dashes img{
+  /* width: 100vw;
+  margin: 0.8rem;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25)); */
+
+  /* grid-area: "dashes"; */
+}
+
+.footerbar {
+  background-color: var(--dark);
+  color: var(--accentgreen);
+  padding-bottom: 2rem;
+}
+.footerbar h4 {
+  padding: 4.6rem 2.4rem 4.5rem 2.4rem;
+  color: var(--accentgreen);
+  font-size: 1.8rem;
+  line-height: 125%;
+  font-weight: lighter;
+  justify-content: center;
+  display: flex;
+
+
+}
+.footerbar ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footerbar .fa {
+  color: var(--accentgreen);
+  font-size: 3rem;
+  padding: 0rem 2rem 4.5rem 2rem;
+}
+.footerbar p {
+  color: var(--accentgreen);
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 1rem; */
+}
