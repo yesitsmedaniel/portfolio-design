@@ -14,52 +14,206 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: 'work sans', sans-serif;
   font-size: 1.8rem;
   background-color: var(--dark);
   color: white;
 
 }
+a:visited{
+  color: #f7f8f8;
+}
+                            /* WELCOME TO MY NAVIGATION ADVENTURE */
 .welcome-wrapper {
-  background-image: linear-gradient(var(--accentgreen), var(--truebase));
-  /* background-image: url('../images/dumbsquares.png'); right bottom no-repeat; */
+  width: 100%;
+  background: linear-gradient(rgba(31, 184, 156, .9), rgba(47, 77, 82, 0.8)),
+  url(../images/wood-textureBW.jpg);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  object-position: 30% 90%;
+}
+              @media (max-width: 40rem) {
+                /* OK this is for mobile view */
+                /* this is the header AKA navbar */
+                .navbar {
+                 /* margin: 0.8rem 2.2rem; */
+                  /* position: fixed; */
+                  width: 100%;
+                  z-index: 3;
+                }
 
-}
-.navLinks {
-  display: flex;
-  /* width: auto; */
-  margin: 0px 16px;
-  padding: 1rem 0rem;
-  height: auto;
-  /* border: 2px solid red; */
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+                .navbar ul{
+                  margin: 0;
+                  padding: 0;
+                  list-style: none;
+                  overflow: hidden;
+                  /* background-color: #fff; */
+                }
+                 .navbar img {
+                 margin-left: 1.6rem;
+                 margin-top: 0.8rem;
+                 width: 5.6rem;
+                 }
+                .navbar li a {
+                  display: flex;
+                  padding: 3rem 2rem;
+                  /* border-right: 1px solid #f4f4f4; */
+                  text-decoration: none;
+                }
 
-.logo {
-  flex-grow: 1;
-  /* border: 5px solid yellow; */
+                .navbar li a:hover,
+                .navbar .menu-btn:hover {
+                  color: var(--lightgrey);
+                }
+                .navlink {
+                  padding: 3rem 0rem;
+                }
+       /* menu */
 
-  /* width: 15rem; */
-}
+        .navbar .navLinks {
+           color: var(--lightgrey);
+          background-color: var(--truebase);
+          display: flex;
+          flex-direction: column;
+          max-height: 0rem;
+          transition: max-height .2s ease-out;
 
-.navlink {
-  /* border: 2px solid blue; */
-  font-size: 1.6rem;
-  padding-top: 2rem;
-  padding-left: 2rem;
-  color: var(--truebase);
-}
+        }
+                /* menu icon */
 
-.hero {
-  padding: 15rem 2.4rem;
-}
-.hero h1 {
-  font-size: 2.25rem;
-  max-width: 85%;
-  line-height: 134%;
-  font-weight: 100;
-}
+                .menu-icon {
+                  cursor: pointer;
+                  display: inline-block;
+                  float: right;
+                  padding: 28px 20px;
+                  /* position: relative; */
+                  user-select: none;
+                }
+
+                .navbar .menu-icon .navicon {
+                  background: var(--truebase);
+                  display: flex;
+                  height: 0.2rem;
+                  position: relative;
+                  /* transition: background .2s ease-out; */
+                  width: 1.8rem;
+                }
+
+                .navbar .menu-icon .navicon:before,
+                .navbar .menu-icon .navicon:after {
+                  background: var(--truebase);
+                  content: '';
+                  display: flex;
+                  height: 100%;
+                  position: absolute;
+                  transition: all .3s ease-out;
+                  width: 100%;
+                }
+
+                .navbar .menu-icon .navicon:before {
+                  top: 5px;
+                }
+
+                .navbar .menu-icon .navicon:after {
+                  top: -5px;
+                }
+
+                /* menu btn */
+
+               .navbar .menu-btn {
+                 display: none;
+               }
+
+               .navbar .menu-btn:checked ~ .navLinks {
+                 max-height: 40rem;
+               }
+
+               .navbar .menu-btn:checked ~ .menu-icon .navicon {
+                 background: transparent;
+               }
+         /* OK this is the icon animation */
+               .navbar .menu-btn:checked ~ .menu-icon .navicon:before {
+                 transform: rotate(-45deg);
+               }
+
+               .navbar .menu-btn:checked ~ .menu-icon .navicon:after {
+                 transform: rotate(45deg);
+               }
+
+               .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+               .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+                 top: 0;
+               }
+         /* enough animation */
+               .hero {
+                 padding: 15rem 2.4rem;
+                 max-width: 100%;
+               }
+               .hero h1 {
+                 font-size: 2.25rem;
+                 max-width: 100%;
+                 line-height: 150%;
+                 font-weight: 100;
+                 text-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
+               }
+              }
+
+            /* lets set the media query around 400-450px */
+          @media (min-width: 40rem) {
+            .navbar {
+              display: flex;
+
+              padding: 0.8rem 2.2rem;
+              justify-content: space-between;
+            }
+            .navbar .menu-btn {
+              display: none;
+            }
+            .navbar .navLinks {
+              display: flex;
+              align-items: center;
+
+            }
+            .navlink {
+              display: flex;
+              padding: 0rem 2.2rem;
+
+
+            }
+            .navbar img{
+              display: flex;
+              flex-grow: 1;
+              width: 5.6rem;
+            }
+            .navbar .menu-icon {
+              display: none;
+            }
+            .navlink a{
+              font-size: 1.6rem;
+              text-decoration: none;
+            }
+            .navlink:hover{
+              color: white;
+            }
+            .hero {
+              padding: 15rem 2.4rem;
+              max-width: 100%;
+            }
+            .hero h1 {
+              font-size: 4.4rem;
+              max-width: 66%;
+              line-height: 134%;
+              font-weight: 100;
+                         text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+            }
+          }
+
+                            /* THIS IS THE HERO TEXT SECTION */
+
 
                   /* THIS IS THE SLIDE SECTION BABY! */
 .slide {
@@ -107,13 +261,20 @@ body {
   padding-right: 1.6rem;
 }
 .caseSlide {
-  /* margin-left: 1.6rem; */
-  max-width: 100%;
-  max-height: 100vh;
+  border-radius: 5px;
+  width: 100%;
+  min-height: 29.1rem;
+  max-height: 30rem;
+  object-fit: cover;
+  object-position: left;
+  /* width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover; */
 }
 .slideWrapper img {
   padding-top: 1.6rem;
-    border-radius: 5px;
+
     /* grid-row: 2 / 3 */
 }
 

@@ -16,16 +16,35 @@ body {
   font-family: 'work sans', sans-serif;
   font-size: 1.8rem;
   background-color: white;
+  /* color: black; */
   color: var(--dark);
 
 }
                         /* THIS IS THE NAVBAR  */
 .navLinks {
+  padding: .8rem 2.2rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .logo {
   flex-grow: 1;
+}
+.logo img {
+    max-width: 5.6rem;
+}
+.aboutHero {
+  background-image: url(../images/duoToneHero.jpg);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position: 30% 15%;
+  /* position: relative; */
+}
+.aboutNav {
+  height: 60rem;
 }
 #CaseStudyHero img{
   width: 100%;
@@ -34,11 +53,10 @@ body {
   object-position: left;
 }
 .navlink {
-  /* border: 2px solid blue; */
   font-size: 1.6rem;
   padding-top: 2rem;
-  padding-left: 2rem;
-  color: var(--truebase);
+  padding-left: 4.2rem;
+  color: var(--dark);
 
 }
                       /* THIS IS THE ROW OF CONTENTS */
@@ -143,7 +161,6 @@ h5 {
 
 h6 {
   font-size: 1.4rem;
-  padding-left: 2.2rem;
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -152,27 +169,55 @@ h6 {
   text-transform: none;
   font-size: 2.2rem;
   line-height: 2.8rem;
-  padding-bottom: 2.2rem;
+  text-align: center;
+  font-weight: lighter;
 }
 .backgroundWrapper{
   background-color: var(--lightgrey);
   margin-bottom: 10rem;
 }
+.compAnalWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
 .CompAnalItem {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+
+  width: auto;
   padding: 2.2rem;
 }
-.CompAnalItem li{
-  font-size: 1.4rem;
-  line-height: 135%;
+.detailsBox {
+  max-width: 40rem;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0rem;
 }
-.listImage img {
+.listImage {
   /* align-self: : center;
   justify-self: center; */
   border-radius: 1rem;
-  width: 120px;
+  width: 100%;
+  max-width: 12.5rem;
+  min-width: 5rem;
+  height: auto;
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+}
+.compDeets{
+  flex-grow: 1;
+  padding-left: 2.2rem;
+}
+.CompAnalItem li{
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+.pro:before {
+  content: "+";
+  margin-right: .4rem;
+}
+.con:before {
+  content: "-";
+  margin-right: .4rem;
 }
 .listNote {
   justify-content: center;
@@ -181,47 +226,185 @@ h6 {
 #results {
   padding: 2.2rem;
 }
-
+.personaCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .userPersona {
+  /* display: flex; */
   background-color: white;
   border-radius: 5px;
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
   margin: 0.8rem;
   padding: 2.2rem;
+  max-width: 44rem;
 }
+.personaIntroBox {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
 .userPersona li {
   font-family: 'Source Serif Pro', serif;
   font-size: 1.4rem;
+  font-weight: lighter;
   line-height: 2.08rem;
+  list-style-type: disc;
 }
-.skipper {
-  border: 10px solid #422d3c;
+.stupidGirl img{
+  width: 100%;
+  height: auto;
   border-radius: 50%;
 }
 
-                          /* THIS IS THE INFO ARCH SECTION: ; */
-.userFlowImage {
-  border-radius: 6px;
-  margin: 0rem 2.2rem 1.6rem 2.2rem;
-  max-width: 100%;
-  max-height:31rem;
-  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
-  /* object-fit: cover; */
+.nameBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
+.nameBox h5 {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  line-height: 150%
+}
+.userPersona .quote {
+  margin: 2.2rem 0rem;
+}
+.goalsFrustBox h6{
+  margin-bottom: 1rem;
+}
+                          /* THIS IS THE INFO ARCH SECTION: ; */
+.userFlowImages{
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  width: auto;
+  margin: 2rem;
+  max-width: 60rem;
+}
+.userFlowImage1 {
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100%;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+  object-fit: contain;
+  margin-bottom: 2.2rem;
+}
+.userFlowImage2 {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+}
+#InfoArch .quote {
+  background-color: white;
+  border-radius: 5px;
+  margin: 2.2rem;
+  padding: 3.2rem 2.2rem;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+}
+.priorityList {
+  margin: 0rem 2.2rem;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    line-height: 2.08rem;
+    list-style-type: disc;
+  }
+
+
+                          /* THIS IS THE VISUAL DESIGN SECTION: ; */
 .sketchPhotos{
+  width: auto;
   display: flex;
   flex-wrap: wrap;
+  margin: 2.2rem 0.0rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.sketchPhotos img:hover {
+  transform:scale(1.5);
+    -ms-transform:scale(1.1); /* IE 9 */
+    -moz-transform:scale(1.1); /* Firefox */
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -o-transform:scale(1.1); /* Opera */
+}
+.imgWrapper {
+  display: inline-block;
+  overflow: hidden;
+    filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
 }
 .brandPhotos img, .sketchPhotos img, .iconImages img{
-    margin: 1.2rem 2.2rem;
     border-radius: 5px;
-    height: 30rem;
+    margin: 1.2rem 0rem;
+    max-width: 50rem;
     width: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+    height: 100%;
+    padding: 0rem 1.2rem;
+    object-fit: contain;
+
+    transition: all .3s ease;
+}
+.dumbWrapper {
+  padding: 0.1rem;
+}
+.colorSchemeDots{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+  margin: 2rem;
+  border-radius: 5px;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
 
 }
+.oneDotBlock{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  /* background-color: white;
+  border-radius: 5px; */
+}
+.oneDotBlock p {
+  font-size: 1.4rem;
+  font-family: 'work sans';
+  padding: .5rem;
+}
+.oneDot {
+  /* border: 3px solid red; */
+  width: 9.2rem;
+  height: 9.2rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.dotPurple{
+  background-color: #1E1651;
+}
+.dotRed{
+  background-color: #ff3864;
+}
+.dotOrange {
+  background-color: #f5c95d;
+}
+.dotYellow {
+  background-color: #f1ff7a;
+}
+.dotBeige {
+  background-color: #efedce;
+}
+
+#testing .quote {
+  background-color: white;
+  border-radius: 5px;
+  margin: 1.2rem 0.8rem;
+  padding: 3.2rem;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+}
+        /* THIS IS THE ADJUSTEMENTS SECTION */
 .versionCompare {
   display: flex;
   flex-wrap: wrap;
@@ -256,7 +439,39 @@ h6 {
 
   /* grid-area: "dashes"; */
 }
+.ending h6{
+  font-size: 2.2rem;
+  text-transform: none;
+  margin: 5rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--truebase);
+}
 
+.topButton, .prevStudy, .nextStudy, .resumeButton{
+  background-color: white;
+ border: 2px solid var(--truebase);
+ border-radius: 5px;
+ color: var(--truebase);
+ width: 14rem;
+margin: 0rem auto 5rem auto;
+ height: 3.5rem;
+ text-align: center;
+ text-decoration: none;
+ font-size: 1.2rem;
+}
+.topButton, .prevStudy, .nextStudy{
+  display: block;
+}
+.prevNextbuttons {
+  display: flex;
+}
+.resumeButton {
+  text-transform: uppercase;
+  margin-left: 2.2rem;
+}
+
+                      /* this is the footer section */
 .footerbar {
   background-color: var(--dark);
   color: var(--accentgreen);
