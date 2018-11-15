@@ -18,6 +18,14 @@ body {
   background-color: white;
   color: var(--dark);
 }
+
+.container {
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+  overflow: hidden;
+
+}
                         /* THIS IS THE NAVBAR  */
 .navLinks {
   padding: .8rem 2.2rem;
@@ -52,11 +60,11 @@ body {
 }
 .navlink {
   font-size: 1.6rem;
-  padding-top: 2rem;
-  padding-left: 4.2rem;
+  padding: 0rem 2.2rem;
   color: var(--dark);
-
 }
+
+
                       /* THIS IS THE ROW OF CONTENTS */
 .rowOfContents {
   display: flex;
@@ -103,7 +111,9 @@ p {
   color: var(--dark);
   font-family: 'Source Serif Pro', serif;
   padding: 2.2rem;
-  line-height: 125%;
+  line-height: 145%;
+  max-width: 82rem;
+  background-color: var(--lightgrey);
 }
 #intro p {
   color: var(--truebase);
@@ -145,7 +155,7 @@ h4 {
   max-height: 30rem;
   object-fit: cover;
   object-position: left;
-  padding: 0 .8rem 4.6rem .8rem;
+  margin: 0 .8rem 4.6rem .8rem;
 }
 
 h5 {
@@ -173,14 +183,19 @@ h6 {
 }
 .backgroundWrapper{
   background-color: var(--lightgrey);
-  max-width: 71.5rem;
+  width: auto;
+  /* max-width: 71.5rem; */
   margin-bottom: 10rem;
+}
 
+.wrapperWRAPPER {
+  overflow: visible;
 }
 .compAnalWrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+
+
 }
 .CompAnalItem {
   flex-wrap: wrap;
@@ -230,14 +245,15 @@ h6 {
 .personaCards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  max-width: 140rem;
 }
 .userPersona {
   /* display: flex; */
   background-color: white;
   border-radius: 5px;
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
-  margin: 0.8rem;
+  margin: .2rem;
   padding: 2.2rem;
   max-width: 44rem;
 }
@@ -273,37 +289,65 @@ h6 {
 .userPersona .quote {
   margin: 2.2rem 0rem;
 }
+.goalsFrustBox {
+  margin: 0rem 1.2rem;
+}
 .goalsFrustBox h6{
   margin-bottom: 1rem;
 }
                           /* THIS IS THE INFO ARCH SECTION: ; */
 .userFlowImages{
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  width: auto;
+  display: flex;
+  flex-wrap: wrap;
   margin: 2rem;
-  max-width: 60rem;
+  align-items: center;
+  /* max-width: 50rem; */
+
 }
 .userFlowImage1 {
+
   border-radius: 5px;
+  margin: 1.2rem 0rem;
+  max-width: 70rem;
   width: 100%;
-  max-width: 100%;
-  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+  height: 100%;
   object-fit: contain;
-  margin-bottom: 2.2rem;
+
+  transition: all .3s ease;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
 }
 .userFlowImage2 {
+  border-radius: 5px;
+  margin: 1.2rem 0rem;
+  max-width: 50rem;
   width: 100%;
-  height: auto;
+  height: 100%;
+  padding: 0rem 1.2rem;
+  object-fit: cover;
+
+  transition: all .3s ease;
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
 }
 #InfoArch .quote {
+  display: flex;
   background-color: white;
   border-radius: 5px;
   margin: 2.2rem;
   padding: 3.2rem 2.2rem;
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+  min-width: 25rem;
+  max-width: 37rem;
 }
+#InfoArch .quoteWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+#testing .quote {
+  max-width: 90rem;
+}
+
 .priorityList {
   margin: 0rem 2.2rem;
     font-family: 'Source Serif Pro', serif;
@@ -315,12 +359,17 @@ h6 {
 
 
                           /* THIS IS THE VISUAL DESIGN SECTION: ; */
+.sketchPwrapper {
+  overflow: hidden;
+}
 .sketchPhotos{
-  width: auto;
+  overflow: hidden;
+  width: 100%;
+  /* margin: -200%; */
   display: flex;
   flex-wrap: wrap;
-  margin: 2.2rem 0.0rem;
-  justify-content: space-around;
+
+  justify-content: center;
   align-items: center;
 }
 .sketchPhotos img:hover {
@@ -338,9 +387,9 @@ h6 {
 .brandPhotos img, .sketchPhotos img, .iconImages img{
     border-radius: 5px;
     margin: 1.2rem 0rem;
-    max-width: 50rem;
+    max-width: 40rem;
     width: 100%;
-    height: 100%;
+    height: 30rem;
     padding: 0rem 1.2rem;
     object-fit: contain;
 
@@ -373,6 +422,7 @@ h6 {
   font-size: 1.4rem;
   font-family: 'work sans';
   padding: .5rem;
+  background-color: transparent;
 }
 .oneDot {
   /* border: 3px solid red; */
@@ -471,6 +521,12 @@ margin: 0rem auto 5rem auto;
 .resumeButton {
   text-transform: uppercase;
   margin-left: 2.2rem;
+  margin-bottom: 2.2rem;
+}
+          /* this is ABOUT stuff */
+#about h6{
+  background-color: white;
+  padding: 3.2rem 2.2rem 1.2rem 2.2rem;
 }
 
                       /* this is the footer section */

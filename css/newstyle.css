@@ -24,10 +24,7 @@ body {
 a:visited{
   color: #f7f8f8;
 }
-.container {
-  max-width: 140rem;
-  margin: auto;
-}
+
                             /* WELCOME TO MY NAVIGATION ADVENTURE */
 .welcome-wrapper {
   width: 100%;
@@ -40,17 +37,22 @@ a:visited{
   background-size:cover;
   object-position: 30% 90%;
 }
-              @media (max-width: 40rem) {
+              @media (max-width: 44rem) {
+                .container {
+                  max-width: 140rem;
+                  margin: auto;
+                }
                 /* OK this is for mobile view */
                 /* this is the header AKA navbar */
                 .navbar {
                  /* margin: 0.8rem 2.2rem; */
-                  /* position: fixed; */
                   width: 100%;
-                  z-index: 3;
+
                 }
 
                 .navbar ul{
+                  width: 100%;
+                  position: fixed;
                   margin: 0;
                   padding: 0;
                   list-style: none;
@@ -62,10 +64,9 @@ a:visited{
                  margin-top: 0.8rem;
                  width: 5.6rem;
                  }
+
                 .navbar li a {
-                  display: flex;
-                  padding: 3rem 2rem;
-                  /* border-right: 1px solid #f4f4f4; */
+                  padding: 2.5rem;
                   text-decoration: none;
                 }
 
@@ -74,19 +75,21 @@ a:visited{
                 color: var(--accentgreen);
                 }
                 .navlink {
-                  padding: 3rem 0rem;
+                  margin: 5rem 0rem;
+                  padding: 1rem;
                 }
        /* menu */
 
         .navbar .navLinks {
           color: var(--lightgrey);
-          background-color: rgba(24,40,42,0.7);
-          display: flex;
-          flex-direction: column;
+          background-color: rgba(24,40,42,0.9);
+          display: block;
           max-height: 0rem;
           transition: max-height .2s ease-out;
-
+          text-align: center;
+          z-index: 3;
         }
+
                 /* menu icon */
 
                 .menu-icon {
@@ -133,7 +136,10 @@ a:visited{
                }
 
                .navbar .menu-btn:checked ~ .navLinks {
-                 max-height: 40rem;
+                 /* max-height: 40rem; */
+                 max-height: 100vh;
+                 height: 100vh;
+
                }
 
                .navbar .menu-btn:checked ~ .menu-icon .navicon {
@@ -165,14 +171,78 @@ a:visited{
                  font-weight: 300;
                  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
                }
+               .basePad {
+                 background-image: linear-gradient(#18282A 35%, #2f4d52 35%, #2f4d52 100%);
+                 background-repeat: no-repeat;
+                 /* background-size: 100% 100%; */
+                 background-position: bottom;
+                 /* grid-row: 2 / 3;
+                 z-index: 2; */
+               }
+               .caseSlide {
+                 border-radius: 5px;
+                 float: left;
+                 margin: 2.6rem 1.3rem;
+                 width: -moz-calc(100% - 2.6rem);
+                   width: -webkit-calc(100% - 2.6rem);
+                   width: -o-calc(100% - 2.6rem);
+                   width: calc(100% - 2.6rem);
+                 min-height: 29.1rem;
+                 max-height: 30rem;
+                 object-fit: cover;
+                 object-position: left;
+                 filter: drop-shadow(.25rem .5rem 1.5rem rgba(0,0,0,0.5));
+                 /* width: 100%;
+                 height: auto;
+                 object-fit: cover; */
+               }
+               .slide h1 {
+                 font-size: 2.25rem;
+                 color: var(--accentgreen);
+                 text-transform: uppercase;
+                 font-weight: 600;
+                 margin-left: 2.2rem;
+                 margin-top: 10rem;
+               }
+               .slide h2 {
+                 font-family: 'Source Serif Pro', serif;
+                 padding-left: 2.4rem;
+                 padding-top: 2.4rem;
+                 line-height: 110%;
+                 font-size: 2.25rem;
+               }
+               .slide h3 {
+                 font-family: 'work sans', sans-serif;
+                 font-size: 1.4rem;
+                 font-weight: 300;
+                 margin: 2.2rem;
+                 line-height: 125%;
+               }
+               .CaseButton {
+                   display: flex;
+                   background-color: var(--truebase);
+                    border: 2px solid var(--lightgrey);
+                    border-radius: 5px;
+                    color: var(--lightgrey);
+                    margin: 4.6rem 2.2rem ;
+                    padding: 0.7rem 2.4rem;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    -webkit-appearance: none;
+               }
               }
 
             /* lets set the media query around 400-450px */
-          @media (min-width: 40rem) {
+          @media (min-width: 44rem) {
+            .container {
+              max-width: 140rem;
+              margin: auto;
+            }
             .navbar {
               display: flex;
 
-              padding: 0.8rem 2.2rem;
+              padding: 2.4rem 5.5rem;
               justify-content: space-between;
             }
             .navbar .menu-btn {
@@ -206,17 +276,87 @@ a:visited{
               color: white;
             }
             .hero {
-              padding: 15rem 2.4rem;
+              margin: 0 5.5rem;
+              padding: 15rem 0;
               max-width: 100%;
             }
             .hero h1 {
               font-size: 4.4rem;
+              width: 75rem;
               max-width: 66%;
               line-height: 134%;
               font-weight: 100;
-                         text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+              text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
             }
-          }
+            .basePad {
+              background-image: linear-gradient(#18282A 17%, #2f4d52 17%, #2f4d52 100%);
+              background-repeat: no-repeat;
+              /* background-size: 100% 100%; */
+              background-position: bottom;
+              /* grid-row: 2 / 3;
+              z-index: 2; */
+            }
+            .caseSlide {
+              border-radius: 5px;
+              float: right;
+              margin: 2.6rem 5.3% 2.6rem 2.6rem;
+              width: -moz-calc(50% - 2.6rem);
+                width: -webkit-calc(50% - 2.6rem);
+                width: -o-calc(50% - 2.6rem);
+                width: calc(50% - 2.6rem);
+              min-height: 29.1rem;
+              max-height: 30rem;
+              object-fit: cover;
+              object-position: left;
+              filter: drop-shadow(.25rem .5rem 1.9rem rgba(0,0,0,0.7));
+              filter: dr
+              height: auto;
+              object-fit: cover;
+              object-position: 35% 50%;
+            }
+            .slideText {
+              padding-top: 5rem;
+            }
+            .slide h1 {
+              font-size: 2.81rem;
+              color: var(--accentgreen);
+              text-transform: uppercase;
+              font-weight: 600;
+              margin-left: 5.5rem;
+              margin-top: 10rem;
+              margin-bottom: -4.5rem;
+              z-index: 4;
+            }
+            .slide h2 {
+              font-family: 'Source Serif Pro', serif;
+              padding-left: 5.5rem;
+              padding-top: 4rem;
+              line-height: 115%;
+              font-size: 3.51rem;
+              max-width: 40%
+            }
+            .slide h3 {
+              font-family: 'work sans', sans-serif;
+              font-size: 1.8rem;
+              font-weight: 300;
+              margin: 2.2rem 5.5rem;
+              line-height: 125%;
+            }
+            .CaseButton {
+                display: flex;
+                background-color: var(--truebase);
+                 border: 2px solid var(--lightgrey);
+                 border-radius: 5px;
+                 color: var(--lightgrey);
+                 margin: 4.6rem 5.5rem ;
+                 padding: 0.7rem 2.4rem;
+                 text-align: center;
+                 text-decoration: none;
+                 font-size: 1.8rem;
+                 -webkit-appearance: none;
+            }
+          } /*media query closer */
+
 
                             /* THIS IS THE HERO TEXT SECTION */
 
@@ -227,61 +367,20 @@ a:visited{
   /* display: grid; */
   /* grid-template-rows: 2fr 1fr 2fr; /*what the hell am i doing*/
 }
-.slide h1 {
-  font-size: 2.25rem;
-  color: var(--accentgreen);
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-left: 2.2rem;
-  margin-top: 10rem;
-}
 
 
-.slide h2 {
-  font-family: 'Source Serif Pro', serif;
-  padding-left: 2.4rem;
-  padding-top: 2.4rem;
-  line-height: 110%;
-  font-size: 2.25rem;
-}
 
-.slide h3 {
-  font-family: 'work sans', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 300;
-  margin: 2.2rem;
-}
+
+
+
 .slideWrapper{
   display: grid;
   /* grid-row: 1 / 3; */
   z-index: 1;
   height: 100%;
 }
-.basePad {
-  background-image: linear-gradient(#18282A 35%, #2f4d52 35%, #2f4d52 100%);
-  background-repeat: no-repeat;
-  /* background-size: 100% 100%; */
-  background-position: bottom;
-  /* grid-row: 2 / 3;
-  z-index: 2; */
-}
-.caseSlide {
-  border-radius: 5px;
-  float: left;
-  margin: 2.6rem 1.3rem;
-  width: -moz-calc(100% - 2.6rem);
-    width: -webkit-calc(100% - 2.6rem);
-    width: -o-calc(100% - 2.6rem);
-    width: calc(100% - 2.6rem);
-  min-height: 29.1rem;
-  max-height: 30rem;
-  object-fit: cover;
-  object-position: left;
-  filter: drop-shadow(.25rem .5rem 1.5rem rgba(0,0,0,0.5));
-  /* width: 100%;
-  height: auto;
-  object-fit: cover; */
-}
+
+
 .slideWrapper img {
     margin-top: 1.6rem;
   /* padding-top: 1.6rem; */
@@ -289,19 +388,7 @@ a:visited{
     /* grid-row: 2 / 3 */
 }
 
-.CaseButton {
-    display: flex;
-    background-color: var(--truebase);
-     border: 2px solid var(--lightgrey);
-     border-radius: 5px;
-     color: var(--lightgrey);
-     margin: 4.6rem 2.2rem ;
-     padding: 0.7rem 2.4rem;
-     text-align: center;
-     text-decoration: none;
-     font-size: 1.2rem;
-     -webkit-appearance: none;
-}
+
 
               /* THIS IS THE FOOTER! */
 .footerbar {
