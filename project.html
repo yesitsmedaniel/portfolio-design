@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
     <!--font-awesome links-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="container">
@@ -51,7 +52,6 @@
           </div>
 
         </section>
-        <br>
         <!-- RESEARCH -->
         <section id="research">
           <h4>RESEARCH</h4>
@@ -116,15 +116,207 @@
             <br>
             My 40 respondents indicated that while they already use a cloud storage system, they are open to new and improved ones. The survey validated the client’s idea and provided insights into how people actually use these products, and what real people are actually looking for.
             See the Survey and its Results.</p>
-            <ul id="results">
+
+            <!-- HERE IS MY CHART JS SECTION!  -->
+            <div class="surveyResultsContainers">
+              <div class="chartsContainerA">
+                <h6>Habits & Struggles</h6>
+                <div class="container">
+                  <canvas id="myChart" width="319" height="200"></canvas>
+                 </div>
+                 <div class="container2">
+                   <canvas id="myChart2" width="319" height="200"></canvas>
+                </div>
+                <div class="container3">
+                  <canvas id="myChart3" width="319" height="200"></canvas>
+               </div>
+              </div>
+              <div class="chartsContainerB">
+                <h6>Solutions & Desires</h6>
+                <div class="container1">
+                  <canvas id="myChart4" width="319" height="200"></canvas>
+                 </div>
+                 <div class="container2">
+                   <canvas id="myChart5" width="319" height="200"></canvas>
+                </div>
+                <div class="container2">
+                  <canvas id="myChart6" width="319" height="200"></canvas>
+               </div>
+              </div>
+            </div>
+                        <script> //chart 1
+                // Chart.defaults.scale.gridLines.display = true;
+                var ctx = document.getElementById("myChart");
+                var myChart = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ["% of respondents screenshot info from the web", "% disinterested"],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [75, 25],
+                            backgroundColor: [
+                                'rgba(128, 119, 184, 1)',
+                                'rgba(128, 119, 184, .3)',
+                            ],
+                            borderWidth: 3
+                        }]
+                    },
+
+                    options: {
+                        scales: {
+                            yAxes: [{
+                              display: false
+
+                            }]
+                        }
+                    }
+                });
+                </script>
+                <script> //chart 2
+                var ctx = document.getElementById("myChart2");
+                var myChart2 = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ["% share items through text/email", "% have alternate methods"],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [82, 18],
+                            backgroundColor: [
+                              'rgba(128, 119, 184, 1)',
+                              'rgba(128, 119, 184, .3)',
+                            ],
+                            borderWidth: 3
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [{
+                              display: false
+                            }]
+                        }
+                    }
+                });
+              </script>
+              <script> //chart 3
+              var ctx = document.getElementById("myChart3");
+              var myChart3 = new Chart(ctx, {
+                  type: 'doughnut',
+                  data: {
+                      labels: ["% share items to big for text/email", "% already have a solution"],
+                      datasets: [{
+                          label: '# of Votes',
+                          data: [55, 45],
+                          backgroundColor: [
+                            'rgba(128, 119, 184, 1)',
+                            'rgba(128, 119, 184, .3)',
+                          ],
+                          borderWidth: 3
+                            }]
+                        },
+
+                  options: {
+                      // cutoutPercentage: {30},
+                      // rotation: {-0.5 * Math.PI},
+                      scales: {
+                          yAxes: [{
+                            display: false
+
+                          }]
+                      }
+                  }
+                });
+              </script>
+              <script> //chart 4
+              var ctx = document.getElementById("myChart4");
+              var myChart4 = new Chart(ctx, {
+                  type: 'doughnut',
+                  data: {
+                      labels: ["% search by typing/talking", "% scroll through a list", "navigate through folders"],
+                      datasets: [{
+                          label: '# of Votes',
+                          data: [46.2, 25, 21],
+                          backgroundColor: [
+                              'rgba(255, 56, 100, 1)',
+                              'rgba(255, 193, 94, 1)',
+                              'rgba(128, 119, 184, 1)',
+                          ],
+                          borderWidth: 3
+                            }]
+                        },
+                  options: {
+                      scales: {
+                          yAxes: [{
+                            display: false
+
+                          }]
+                      }
+                  }
+                });
+              </script>
+              <script> //chart 5
+              var ctx = document.getElementById("myChart5");
+              var myChart5 = new Chart(ctx, {
+                  type: 'doughnut',
+                  data: {
+                      labels: ["% interested in organizing apps", "% disinterested"],
+                      datasets: [{
+                          label: '# of Votes',
+                          data: [75, 25],
+                          backgroundColor: [
+                              'rgba(255, 193, 94, 1)',
+                              'rgba(255, 193, 94, .3)',
+                          ],
+                          borderWidth: 3
+                            }]
+                        },
+
+                  options: {
+                      scales: {
+                          yAxes: [{
+                            display: false
+
+                          }]
+                      }
+                  }
+                });
+              </script>
+              <script> //chart 6
+              var ctx = document.getElementById("myChart6");
+              var myChart6 = new Chart(ctx, {
+                  type: 'doughnut',
+                  data: {
+                      labels: ["% prioritize an easy search function", "% disinterested"],
+                      datasets: [{
+                          label: '# of Votes',
+                          data: [75, 25],
+                          backgroundColor: [
+                              'rgba(255, 56, 100, 1)',
+                              'rgba(255, 56, 100, .3)',
+                          ],
+                          borderWidth: 3
+                            }]
+                        },
+
+                  options: {
+                      scales: {
+                          yAxes: [{
+                            display: false
+
+                          }]
+                      }
+                  }
+                });
+              </script>
+            <!-- <ul id="results">
               <li>75% Screenshot Info from the Web</li>
               <li>82% share through text/email</li>
               <li>55% have items to big for text/email</li>
               <li>65% prioritize easy search funcitons</li>
               <li>67% interested in getting organized</li>
               <li>46% prefer Search Bar to find info</li>
-            </ul>
-            <br>
+            </ul> -->
+
+            <!-- THE END OF MY CHART JS SHIT! -->
           </div>
 
           <h5>USER PERSONAS</h5>
