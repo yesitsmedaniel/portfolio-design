@@ -631,7 +631,7 @@ h6 {
   justify-content: center;
 }
 .brandPhotos img, .sketchPhotos img, .iconImages img{
-  border: 3px dashed blue;
+  /* border: 3px dashed blue; */
     border-radius: 5px;
     margin: 1.2rem 1.2rem;
     max-width: 40rem;
