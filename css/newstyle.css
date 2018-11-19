@@ -21,6 +21,9 @@ body {
   color: white;
 
 }
+a {
+  all: unset;
+}
 a:visited{
   color: #f7f8f8;
 }
@@ -203,6 +206,7 @@ a:visited{
                  font-weight: 600;
                  margin-left: 2.2rem;
                  margin-top: 10rem;
+                 z-index: 4;
                }
                .slide h2 {
                  font-family: 'Source Serif Pro', serif;
