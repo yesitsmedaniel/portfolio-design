@@ -17,8 +17,15 @@ body {
   font-size: 1.8rem;
   background-color: white;
   color: var(--dark);
+  /* max-width: 100%; */
+  overflow-x: hidden;
 }
-
+a {
+  all: unset;
+}
+b {
+  font-weight: 600;
+}
 .container {
   width: 100%;
   max-width: 140rem;
@@ -27,12 +34,12 @@ body {
 
 }
                         /* THIS IS THE NAVBAR  */
-.navLinks {
+/* .navLinks {
   padding: .8rem 2.2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
+} */
 .logo {
   flex-grow: 1;
 }
@@ -47,10 +54,11 @@ body {
   -o-background-size:cover;
   background-size:cover;
   background-position: 30% 15%;
-  /* position: relative; */
+  height: 60rem;
+
 }
 .aboutNav {
-  height: 60rem;
+  /* height: 60rem; */
 }
 #CaseStudyHero img{
   width: 100%;
@@ -58,12 +66,176 @@ body {
   object-fit: cover;
   object-position: left;
 }
-.navlink {
+/* .navlink {
   font-size: 1.6rem;
   padding: 0rem 2.2rem;
   color: var(--dark);
-}
+} */
+                  @media (max-width: 44rem) {
+                    .container {
+                      max-width: 140rem;
+                      margin: auto;
+                    }
+                    /* OK this is for mobile view */
+                    /* this is the header AKA navbar */
+                    .navbar {
+                     /* margin: 0.8rem 2.2rem; */
+                      width: 100%;
 
+                    }
+
+                    .navbar ul{
+                      width: 100%;
+                      position: fixed;
+                      margin: 0;
+                      padding: 0;
+                      list-style: none;
+                      overflow: hidden;
+
+                    }
+                     .navbar img {
+                     margin-left: 1.6rem;
+                     margin-top: 0.8rem;
+                     width: 5.6rem;
+                     }
+
+                    .navbar li a {
+                      padding: 2.5rem;
+                      text-decoration: none;
+                    }
+
+                    .navbar li a:hover,
+                    .navbar .menu-btn:hover {
+                    color: var(--accentgreen);
+                    }
+                    .navlink {
+                      margin: 5rem 0rem;
+                      padding: 1rem;
+                    }
+                  /* menu */
+
+                  .navbar .navLinks {
+                  color: var(--lightgrey);
+                  background-color: rgba(24,40,42,0.9);
+                  display: block;
+                  max-height: 0rem;
+                  transition: max-height .2s ease-out;
+                  text-align: center;
+                  z-index: 3;
+                  }
+
+                    /* menu icon */
+
+                    .menu-icon {
+                      cursor: pointer;
+                      display: inline-block;
+                      float: right;
+                      padding: 28px 20px;
+                      /* position: relative; */
+                      user-select: none;
+                    }
+
+                    .navbar .menu-icon .navicon {
+                      background: var(--dark);
+                      display: flex;
+                      height: 0.2rem;
+                      position: relative;
+                      /* transition: background .2s ease-out; */
+                      width: 1.8rem;
+                    }
+
+                    .navbar .menu-icon .navicon:before,
+                    .navbar .menu-icon .navicon:after {
+                      background: var(--dark);
+                      content: '';
+                      display: flex;
+                      height: 100%;
+                      position: absolute;
+                      transition: all .3s ease-out;
+                      width: 100%;
+                    }
+
+                    .navbar .menu-icon .navicon:before {
+                      top: 5px;
+                    }
+
+                    .navbar .menu-icon .navicon:after {
+                      top: -5px;
+                    }
+
+                    /* menu btn */
+
+                   .navbar .menu-btn {
+                     display: none;
+                   }
+
+                   .navbar .menu-btn:checked ~ .navLinks {
+                     /* max-height: 40rem; */
+                     max-height: 100vh;
+                     height: 100vh;
+
+                   }
+
+                   .navbar .menu-btn:checked ~ .menu-icon .navicon {
+                     background: transparent;
+                   }
+                  /* OK this is the icon animation */
+                   .navbar .menu-btn:checked ~ .menu-icon .navicon:before {
+                     transform: rotate(-45deg);
+                   }
+
+                   .navbar .menu-btn:checked ~ .menu-icon .navicon:after {
+                     transform: rotate(45deg);
+                   }
+
+                   .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+                   .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+                     top: 0;
+                   }
+                 }
+                /* HERE WE GO ON ANOTHER MEDIA QUERY!!! DESKTOP:  */
+                @media (min-width: 44rem) {
+                  .container {
+                    max-width: 140rem;
+                    margin: auto;
+                  }
+                  .navbar {
+                    display: flex;
+
+                    padding: 2.4rem 5.5rem;
+                    justify-content: space-between;
+                  }
+                  .navbar .menu-btn {
+                    display: none;
+                  }
+                  .navbar .navLinks {
+                    display: flex;
+                    align-items: center;
+
+                  }
+                  .navlink {
+                    display: flex;
+                    padding: 0rem 2.2rem;
+
+
+                  }
+                  .navbar img{
+                    display: flex;
+                    flex-grow: 1;
+                    width: 5.6rem;
+                  }
+                  .navbar .menu-icon {
+                    display: none;
+                  }
+                  .navlink a{
+                    font-size: 1.6rem;
+                    text-decoration: none;
+                    color: var(--dark)
+                  }
+                  .navlink a:hover{
+                    color: var(--accentgreen);
+                  }
+                }
 
                       /* THIS IS THE ROW OF CONTENTS */
 .rowOfContents {
@@ -72,7 +244,7 @@ body {
   background-color: var(--lightgrey);
   color: var(--truebase);
   font-weight: 100;
-  justify-content: center;
+  justify-content: space-between;
 }
 .rowOfContents li {
   font-size: 1.4rem;
@@ -246,16 +418,20 @@ h6 {
   background-color: white;
   border-radius: 5px;
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
-  margin: .2rem;
+  margin: 1rem;
   padding: 2.2rem;
-  max-width: 44rem;
+  max-width: 34rem;
+}
+.chartsContainerA h6, .chartsContainerB h6 {
+  text-align: center;
+  padding: 1rem 0rem 2.4rem 0rem;
 }
 .surveyResultsContainers {
-  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 2.2rem;
+  overflow: hidden;
 }
 
 .personaCards {
@@ -317,6 +493,7 @@ h6 {
   flex-wrap: wrap;
   margin: 2rem;
   align-items: center;
+  justify-content: space-around;
   /* max-width: 50rem; */
 
 }
@@ -365,11 +542,11 @@ h6 {
 }
 
 .priorityList {
-  margin: 0rem 2.2rem;
+    margin: 0rem 2.2rem;
     font-family: 'Source Serif Pro', serif;
     font-size: 1.4rem;
     font-weight: lighter;
-    line-height: 2.08rem;
+    line-height: 2.5rem;
     list-style-type: disc;
   }
 
@@ -384,10 +561,59 @@ h6 {
   /* margin: -200%; */
   display: flex;
   flex-wrap: wrap;
-
+  border-radius: 5px;
   justify-content: center;
   align-items: center;
 }
+            /* THIS IS IMPORTED SNOWBOARD ZOOM STUFF */
+            .tiles {
+                /* position: absolute; */
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 50rem;
+                border: 4px solid purple;
+              }
+
+              .tile {
+                position: relative;
+                float: left;
+                width: 33.333%;
+                height: 100%;
+                overflow: hidden;
+              }
+
+              .photo {
+                /* position: absolute; */
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                transition: transform .5s ease-out;
+              }
+
+              .txt {
+                position: absolute;
+                z-index: 2;
+                right: 0;
+                bottom: 10%;
+                left: 0;
+                font-size: 9px;
+                line-height: 12px;
+                text-align: center;
+                cursor: default;
+              }
+
+              .x {
+                font-size: 32px;
+                line-height: 32px;
+              }
+
+            /* ZOOM STUFF STOPS HERE */
+
 .sketchPhotos img:hover {
   transform:scale(1.5);
     -ms-transform:scale(1.1); /* IE 9 */
@@ -396,21 +622,30 @@ h6 {
     -o-transform:scale(1.1); /* Opera */
 }
 .imgWrapper {
-  display: inline-block;
   overflow: hidden;
     filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
 }
+.brandPhotos, .iconImages{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .brandPhotos img, .sketchPhotos img, .iconImages img{
+  border: 3px dashed blue;
     border-radius: 5px;
-    margin: 1.2rem 0rem;
+    margin: 1.2rem 1.2rem;
     max-width: 40rem;
-    width: 100%;
-    height: 30rem;
-    padding: 0rem 1.2rem;
+    width: auto;
+    max-height: 33.8rem;
+    /* height: 30rem; */
+    /* padding: 0rem 1.2rem; */
     object-fit: contain;
-
     transition: all .3s ease;
 }
+.logosketchStorm {
+  object-fit: scale-down;
+}
+
 .dumbWrapper {
   padding: 0.1rem;
 }
@@ -475,7 +710,7 @@ h6 {
 .versionCompare {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: space-around;
   object-fit: contain;
 }
 .vers1 img, .vers2 img {
@@ -484,17 +719,27 @@ h6 {
 }
 
 .hiFis {
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr; */
-  /* grid-template-rows: 2fr 2fr 2fr; */
-  /* grid-template-areas:
-  "landing dashes"
-  "dashes dashes"
-  "landing dashes" */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.versionCompare h6, .landing h6, .dashes h6 {
+  margin-left: 2.2rem;
+  margin-top: 2.2rem;
+}
+.landing, .dashes {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 50rem; */
+  height: auto;
+  object-fit: contain;
+  flex-wrap: nowrap;
 }
 .landing img, .dashes img{
   width: 100%;
-  margin: 0.8rem 0.8rem 2.2rem 0.8rem;
+  max-width: 62.1rem;
+  /* height: 100%; */
+  padding: 0.8rem;
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
   /* grid-area: "landing"; */
 }
@@ -573,10 +818,13 @@ margin: 0rem auto 5rem auto;
   padding: 0rem 2rem 4.5rem 2rem;
 }
 .footerbar p {
+  max-width: 100%;
   color: var(--accentgreen);
   font-family: 'Source Serif Pro', serif;
   font-size: 1.4rem;
-  display: flex;
+  text-align: center;
+  /* display: flex; */
   justify-content: center;
+  background-color: var(--dark)
   /* margin-bottom: 1rem; */
 }

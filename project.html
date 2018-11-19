@@ -11,16 +11,19 @@
     <!--font-awesome links-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"> </script>
   </head>
   <body>
     <div class="container">
-      <nav class="caseNav">
-          <ul class="navLinks">
-            <li class="logo"><img  src="images/Logo-DG-70px.trns.png" alt="DG Logo"></li>
-            <li class="navlink">WORK</li>
-            <li class="navlink">ABOUT</li>
-            <li class="navlink">CONTACT</li>
-          </ul>
+      <nav class="navbar">
+        <a href="#home"><img class="logo" src="images/Logo-DG-70px.trns.png" alt="DG"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="navLinks">
+          <li class="navlink"><a href="#work">WORK</a></li>
+          <li class="navlink"><a href="#about">ABOUT</a></li>
+          <li class="navlink"><a href="#contact">CONTACT</a>d</li>
+        </ul>
       </nav>
       <!-- CASE HERO -->
       <section id="CaseStudyHero">
@@ -132,7 +135,7 @@
                </div>
               </div>
               <div class="chartsContainerB">
-                <h6>Solutions & Desires</h6>
+                <h6>Methods & Desires</h6>
                 <div class="container1">
                   <canvas id="myChart4" width="319" height="200"></canvas>
                  </div>
@@ -161,8 +164,8 @@
                             borderWidth: 3
                         }]
                     },
-
                     options: {
+                      rotation: 0.7,
                         scales: {
                             yAxes: [{
                               display: false
@@ -189,6 +192,7 @@
                         }]
                     },
                     options: {
+                      rotation: 0.6,
                         scales: {
                             yAxes: [{
                               display: false
@@ -215,8 +219,7 @@
                         },
 
                   options: {
-                      // cutoutPercentage: {30},
-                      // rotation: {-0.5 * Math.PI},
+                    rotation: 1.35,
                       scales: {
                           yAxes: [{
                             display: false
@@ -244,6 +247,7 @@
                             }]
                         },
                   options: {
+                    rotation: 1.56,
                       scales: {
                           yAxes: [{
                             display: false
@@ -271,6 +275,7 @@
                         },
 
                   options: {
+                    rotation: 0.7,
                       scales: {
                           yAxes: [{
                             display: false
@@ -298,6 +303,7 @@
                         },
 
                   options: {
+                    rotation: 0.7,
                       scales: {
                           yAxes: [{
                             display: false
@@ -307,15 +313,6 @@
                   }
                 });
               </script>
-            <!-- <ul id="results">
-              <li>75% Screenshot Info from the Web</li>
-              <li>82% share through text/email</li>
-              <li>55% have items to big for text/email</li>
-              <li>65% prioritize easy search funcitons</li>
-              <li>67% interested in getting organized</li>
-              <li>46% prefer Search Bar to find info</li>
-            </ul> -->
-
             <!-- THE END OF MY CHART JS SHIT! -->
           </div>
 
@@ -422,13 +419,45 @@
 
 
           <h5>WIREFRAMES</h5>
-          <div class="backgroundWrapper">
+          <!-- <div class="backgroundWrapper"> -->
             <p>I sketched many iterations of Kernel’s dashboard, with the following primary goals:</p>
             <ul class="priorityList">
               <li>Balancing the multiple search features (search bar, list, and folder system)</li>
               <li>A prominent "ADD" button</li>
               <li>An uncluttered space that is relaxing and welcoming to the user’s eye.</li>
             </ul>
+            <div class="tiles">
+              this is where my images should be ...
+              <div class="tile" data-scale="1.1" data-image="../images/wireframes-kernel.02.png">
+                <div class="photo" style="background-image: url(../images/wireframes-kernel.02.png); transform: scale(1); transform-origin: 50% 60% 0px;"></div>
+              </div>
+              <div class="tile" data-scale="1.6" data-image="/Users/GrayMagic/bloc/portfolio/images/wireframes-kernel.02.png"></div>
+              <div class="tile" data-scale="2.4" data-image="https://drive.google.com/file/d/1xDdRFlFHiyvRM8N_W16Ufcxa2E0KG-n0/view?usp=sharing"></div>
+            </div>
+          <script type="text/javascript">
+                  $('.tile')
+                    // tile mouse actions
+                    .on('mouseover', function(){
+                      $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
+                    })
+                    .on('mouseout', function(){
+                      $(this).children('.photo').css({'transform': 'scale(1)'});
+                    })
+                    .on('mousemove', function(e){
+                      $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+                    })
+                    // tiles set up
+                    .each(function(){
+                      $(this)
+                        // add a photo container
+                        .append('<div class="photo"></div>')
+                        // some text just to show zoom level on current item in this example
+                        .append('<div class="txt"><div class="x">'+ $(this).attr('data-scale') +'x</div>ZOOM ON<br>HOVER</div>')
+                        // set up a background image for each tile based on data-image attribute
+                        .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
+                    })
+            </script>
+
             <div class="sketchPwrapper">
               <div class="sketchPhotos">
                 <div class="imgWrapper">
@@ -475,7 +504,7 @@
             I used mind-mapping techniques and sketching to zero in on a the idea of a popcorn bucket - and the metaphor of a kernel as an idea that our users want to store. Rather than going too literal- my logo developed from the idea of the kernel bursting into it’s popped shape, and melding that with the letter K for Kernel. I chose Dosis for the Logotype, button text and technical information, while using Lato for paragraph and conversational text.
             </p>
             <div class="brandPhotos">
-              <img src="images/branding.kernel-sketches.01.png" alt="branding sketches">
+              <img class="logosketchStorm" src="images/branding.kernel-sketches.01.png" alt="branding sketches">
               <img src="images/logo-sketches-kernel.01.png" alt="logo sketches">
               <img src="images/kernel-dissected.png" alt="Dissected Logo">
               <img src="images/Purple-Back-Logo.png" alt="Purple Logo">
@@ -592,6 +621,9 @@
 
 
         </section>
+        <script>
+
+        </script>
         <!-- END OF STUDY -->
         <section id="endOfStudy">
           <div class="ending">
