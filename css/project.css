@@ -22,6 +22,10 @@ body {
 }
 a {
   all: unset;
+  cursor: pointer;
+}
+a:hover {
+  cursor: pointer;
 }
 b {
   font-weight: 600;
@@ -308,6 +312,7 @@ p {
    text-decoration: none;
    font-size: 1.2rem;
    -webkit-appearance: none;
+   cursor:pointer;
 }
 
                       /* THIS IS THE RESEARCH SECTION */
@@ -772,7 +777,14 @@ margin: 0rem auto 5rem auto;
  text-decoration: none;
  font-size: 1.2rem;
  -webkit-appearance: none;
+ cursor:pointer;
 }
+          /* TEMPORARILY DISABLED BUTTONS */
+          .prevStudy, .nextStudy {
+            color: #2f4d5260;
+            border: 2px solid #2f4d5260;
+          }
+
 .topButton, .prevStudy, .nextStudy{
   display: block;
 }
