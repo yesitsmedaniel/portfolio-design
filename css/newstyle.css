@@ -288,8 +288,8 @@ a:visited{
             }
             .hero h1 {
               font-size: 4.4rem;
-              width: 78rem;
-              max-width: 80%;
+              width: 80rem;
+              max-width: 85%;
               line-height: 134%;
               font-weight: 100;
               text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
