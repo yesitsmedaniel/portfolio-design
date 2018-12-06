@@ -17,8 +17,8 @@ body {
   font-size: 1.8rem;
   background-color: white;
   color: var(--dark);
-  /* max-width: 100%; */
-  overflow-x: hidden;
+  max-width: 100%;
+  /* overflow-x: hidden; */
 }
 a {
   all: unset;
@@ -34,8 +34,14 @@ b {
   width: 100%;
   max-width: 140rem;
   margin: auto;
-  overflow: hidden;
+  /* overflow-x: hidden; */ so RoC works :/
+}
 
+:target:before {
+content:"";
+display:block;
+height:3rem;
+margin:-20px 0 0;
 }
                         /* THIS IS THE NAVBAR  */
 /* .navLinks {
@@ -125,7 +131,7 @@ b {
                   max-height: 0rem;
                   transition: max-height .2s ease-out;
                   text-align: center;
-                  z-index: 3;
+                  z-index: 100;
                   }
 
                     /* menu icon */
@@ -242,17 +248,28 @@ b {
                 }
 
                       /* THIS IS THE ROW OF CONTENTS */
+.makeitsticky{
+  /* position: fixed; */
+}
 .rowOfContents {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-wrap: wrap;
   background-color: var(--lightgrey);
   color: var(--truebase);
   font-weight: 100;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: .8rem 2.2rem;
+  z-index: 99;
+    filter: drop-shadow(0 .25rem .25rem rgba(0,0,0,0.1));
+    filter
 }
 .rowOfContents li {
   font-size: 1.4rem;
-  padding: 1.6rem;
+  padding: .5rem;
+  margin-top: 1rem;
+
 }
                     /* THIS IS THE INTRO SECTION */
 #intro h1 h2 h3 p {
@@ -394,13 +411,16 @@ h6 {
   align-items: center;
   margin: 2rem 0rem;
 }
+.stupidIcon {
+
+}
 .listImage {
   /* align-self: : center;
   justify-self: center; */
   border-radius: 1rem;
   width: 100%;
-  max-width: 12.5rem;
-  min-width: 5rem;
+  max-width: 9.838rem;
+    min-width: 5rem;
   height: auto;
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
 }
