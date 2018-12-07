@@ -252,6 +252,7 @@ margin:-20px 0 0;
   /* position: fixed; */
 }
 .rowOfContents {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   display: flex;
