@@ -9,8 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">    <!--font-awesome links-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js" charset="utf-8"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"> </script>
+    <link rel="stylesheet" href="css/chocolat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js" charset="utf-8"></script> <!--chartJS-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"> </script> <!--chartJS-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  <!-- -->
+    <script type="text/javascript" src="./js/jquery.chocolat.js"></script>
 
   </head>
   <body>
@@ -36,12 +39,12 @@
       <!-- Row of Contents -->
       <div class="makeitsticky">
         <ul class="rowOfContents">
-          <a href="#intro"><li>INTRO</li></a>
+          <a href="#top"><li>INTRO</li></a>
           <a href="#research"><li>RESEARCH</li></a>
-          <a href="#InfoArch"><li id="informationarchitecture">IA</li></a>
+          <a href="#InfoArch"><li id="informationarchitecture">I.A.</li></a>
           <a href="#brandingDesign"><li>DESIGN</li></a>
           <a href="#testing"><li>TESTING</li></a>
-          <a href="#conclusion"><li>CONCLUSION</li></a>
+          <a href="#conclusion"><li>FINDINGS</li></a>
         </ul>
 
 
@@ -394,7 +397,7 @@
         <!-- INFO ARCH -->
         <section id="InfoArch">
           <h4>INFORMATION ARCHITECTURE</h4>
-          <img class="categoryImage"   src="images/wireframes-sketches-detail.png" alt="Information Architecture Image">
+          <img class="categoryImage"   src="images/wireframes-sketches-detail.jpg" alt="Information Architecture Image">
           <h5>USER STORIES</h5>
           <div class="backgroundWrapper">
             <p>I created a list of User Stories, actions that our users would need to undertake while using the app, and then sorted them by priority. At the very top of these priority lists were account creation, adding files to their storage, and searching these files out. As a revenue generator, it’s imperative users are able to upgrade to a paid-subscription account. See all the user stories here.</p>
@@ -418,8 +421,17 @@
           <div class="backgroundWrapper">
             <p>I diagrammed flows of the most high priority user stories to make sure these tasks could be accomplished quickly and without too many clicks. Additionally, I wanted to include multiple routes to find files, based on a given user’s preferred approach. I built the Sitemap to flesh out all the screens that would require wireframe modeling. <a href="https://www.dropbox.com/s/hr0s3lr0ineygus/Userflows-Revised.png?dl=0" target="_blank"><b>Check them out here.</b></a></p>
             <div class="userFlowImages">
-              <img class="userFlowImage1" src="images/userflows-kernel.01b.png" alt="">
-              <img class="userFlowImage2" src="images/UserFlow-diagram.png" alt="">
+
+    <!-- TESTING SOME LIGHTBOX HERE!!! -->
+              <div id="example666">
+                <a class="chocolat-image" href="images/userflows-kernel.01b.jpg" alt="" title="caption image 1">
+                  <img width="500" src="images/mini/userflows-kernel.01b.jpg"/>
+                </a>
+                <a class="chocolat-image" href="images/UserFlow-diagram.png" alt="" >
+                  <img width="500" src="images/mini/UserFlow-diagram.png"/>
+                </a>
+              </div>
+    <!-- end of lightbox testing -->
             </div>
             </div>
 
@@ -436,7 +448,7 @@
             <div class="sketchPwrapper">
               <div class="sketchPhotos">
                 <div class="imgWrapper">
-                  <img src="images/wireframes-kernel.02.png" alt="wireframes closeup">
+                  <img src="images/wireframes-kernel.02.jpg" alt="wireframes closeup">
                 </div>
                 <div class="imgWrapper">
                   <img src="images/wireframes-kernel.png" alt="wireframe details">
@@ -479,7 +491,7 @@
             I used mind-mapping techniques and sketching to zero in on a the idea of a popcorn bucket - and the metaphor of a kernel as an idea that our users want to store. Rather than going too literal- my logo developed from the idea of the kernel bursting into it’s popped shape, and melding that with the letter K for Kernel. I chose Dosis for the Logotype, button text and technical information, while using Lato for paragraph and conversational text.
            <a href="https://docs.google.com/document/d/12-OpLkqUdrowpG8GwASJKklv4e-CO1qB3Ykt6fpD_R0/edit?usp=sharing"target="_blank"><b>See some more in-depth preference tests I ran here. </b></a></p>
             <div class="brandPhotos">
-              <img class="logosketchStorm" src="images/branding.kernel-sketches.01.png" alt="branding sketches">
+              <img class="logosketchStorm" src="images/branding.kernel-sketches.01.jpg" alt="branding sketches">
               <img src="images/logo-sketches-kernel.01.png" alt="logo sketches">
               <img src="images/Kernel-dissected.png" alt="Dissected Logo">
               <img src="images/Purple-Back-Logo.png" alt="Purple Logo">
@@ -527,7 +539,7 @@
           <div class="backgroundWrapper">
             <div class="iconImages">
               <img src="images/branding-sketches.png" alt="branding sketches">
-              <img src="images/usage-sketches.png" alt="usage sketches">
+              <img src="images/usage-sketches.jpg" alt="usage sketches">
               <img src="images/icons-laptop.png" alt="laptop">
               <img src="images/icons-bucket.png" alt="bucket">
               <img src="images/icons-folders.png" alt="folders">
@@ -587,7 +599,7 @@
         </section>
         <!-- CONCLUSION -->
         <section id="conclusion">
-          <h4>CONCLUSION</h4>
+          <h4>FINDINGS</h4>
           <div class="backgroundWrapper">
               <p>Kernel’s logo, branding concept and visual design created a visually distinct system breathing some whimsy and life into the bland existing market. The UI proved itself to be intuitive and navigable in repeated tests. Its array of features satisfy our client’s MVP and make Kernel a contender in the cloud storage marketplace.<br>
               <br>
@@ -641,6 +653,11 @@
           <p>© 2018 Daniel Gaines</p>
         </footer>
       </div>
+      <script>$(function(){
+        $('#example666').Chocolat({
+                    imageSize: 'contain'
+                });  });
+        </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129511019-1"></script>
       <script>
