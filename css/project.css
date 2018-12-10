@@ -467,7 +467,7 @@ h6 {
   padding-bottom: 2.2rem;
   overflow: hidden;
 }
-
+                      /* USER PERSONA SECTION */
 .personaCards {
   display: flex;
   flex-wrap: wrap;
@@ -591,69 +591,13 @@ h6 {
 .sketchPhotos{
   overflow: hidden;
   width: 100%;
-  /* margin: -200%; */
   display: flex;
   flex-wrap: wrap;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
 }
-            /* THIS IS IMPORTED SNOWBOARD ZOOM STUFF */
-            .tiles {
-                /* position: absolute; */
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 50rem;
-                border: 4px solid purple;
-              }
 
-              .tile {
-                position: relative;
-                float: left;
-                width: 33.333%;
-                height: 100%;
-                overflow: hidden;
-              }
-
-              .photo {
-                /* position: absolute; */
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                transition: transform .5s ease-out;
-              }
-
-              .txt {
-                position: absolute;
-                z-index: 2;
-                right: 0;
-                bottom: 10%;
-                left: 0;
-                font-size: 9px;
-                line-height: 12px;
-                text-align: center;
-                cursor: default;
-              }
-
-              .x {
-                font-size: 32px;
-                line-height: 32px;
-              }
-
-            /* ZOOM STUFF STOPS HERE */
-
-.sketchPhotos img:hover {
-  transform:scale(1.5);
-    -ms-transform:scale(1.1); /* IE 9 */
-    -moz-transform:scale(1.1); /* Firefox */
-    -webkit-transform:scale(1.5); /* Safari and Chrome */
-    -o-transform:scale(1.1); /* Opera */
-}
 .imgWrapper {
   overflow: hidden;
     filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
