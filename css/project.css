@@ -691,9 +691,12 @@ h6 {
   justify-content: space-around;
   object-fit: contain;
 }
-.vers1 img, .vers2 img {
+.vers1 img, {
   padding: .8rem;
   width:100%;
+}
+.vers1 h6 {
+  text-align: center;
 }
 
 .hiFis {
