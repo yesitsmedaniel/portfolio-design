@@ -320,7 +320,9 @@ p {
   padding: 2.2rem;
 }
 .paragraphBlock {
+  /* max-width: 100rem; */
   background-color: var(--lightgrey);
+  /* margin: 0 auto; */
 }
 .protoButton {
     /* display: flex; */
@@ -696,7 +698,7 @@ h6 {
   width:100%;
 }
 .vers1 h6 {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .hiFis {
@@ -704,7 +706,8 @@ h6 {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.versionCompare h6, .landing h6, .dashes h6 {
+
+.versionCompare h6, .landing h6, .dashes h6, .hiFis-mobile h6{
   margin-left: 2.2rem;
   margin-top: 2.2rem;
 }
@@ -724,13 +727,13 @@ h6 {
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
   /* grid-area: "landing"; */
 }
-
-.dashes img{
-  /* width: 100vw;
-  margin: 0.8rem;
-  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25)); */
-
-  /* grid-area: "dashes"; */
+.hiFis-mobile img{
+  /* width: 100%; */
+  max-width: 100%;
+  /* margin: 2.2rem; */
+  padding: 2.2rem;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+  object-fit: contain;
 }
 .ending h6{
   font-size: 2.2rem;
