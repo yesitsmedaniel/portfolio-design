@@ -28,6 +28,8 @@ a:hover {
   cursor: pointer;
   color: var(--accentgreen);
 }
+
+
 b {
   font-weight: 600;
 }
@@ -36,6 +38,12 @@ b {
   max-width: 140rem;
   margin: auto;
   /* overflow-x: hidden; */ so RoC works :/
+}
+.insideContainer {
+  max-width: 100rem;
+  margin: 0 auto;
+
+  /* border: 3px solid red; */
 }
 
 :target:before {
@@ -58,24 +66,48 @@ margin:-5rem 0 0;
     max-width: 5.6rem;
 }
 .aboutHero {
-  background-image: url(../images/duoToneHero.jpg);
+  /* background-image: url(../images/duoToneHero.jpg);
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
   background-size:cover;
   background-position: 30% 15%;
-  height: 60rem;
-
+  height: 60rem; */
 }
+.fullContainer {
+  width: 100%;
+  background: linear-gradient(rgba(31, 184, 156, .9), rgba(47, 77, 82, 0.8), rgba(247, 248, 248, 1)),
+  url(../images/wood-textureBW.jpg);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  object-position: 30% 90%;
+  margin: auto;
+}
+.topContainer{
+  width: 100%;
+  margin: auto;
+  background-image: url(../images/duoToneHero.jpg);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  height: 60rem;
+  background-position: 30% 30%;
+}
+
 .aboutNav {
   /* height: 60rem; */
 }
 #CaseStudyHero img{
   width: 100%;
-  height: 24.8rem;
+  height: 30rem;
   object-fit: cover;
-  object-position: left;
+  object-position: 30 70;
 }
 /* .navlink {
   font-size: 1.6rem;
@@ -92,7 +124,6 @@ margin:-5rem 0 0;
                     .navbar {
                      /* margin: 0.8rem 2.2rem; */
                       width: 100%;
-
                     }
 
                     .navbar ul{
@@ -203,17 +234,103 @@ margin:-5rem 0 0;
                    .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
                      top: 0;
                    }
+                   .chartsContainerA, .chartsContainerB {
+                     background-color: white;
+                     border-radius: 5px;
+                     filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+                     margin: 1rem;
+                     padding: 2.2rem;
+                     max-width: 34rem;
+                   }
+                   .chartsContainerA h6, .chartsContainerB h6 {
+                     text-align: center;
+                     padding: 1rem 0rem 2.4rem 0rem;
+                     font-size: 1.8rem;
+
+                   }
+                   .surveyResultsContainers {
+                     display: flex;
+                     flex-wrap: wrap;
+                     justify-content: space-around;
+                     padding-bottom: 2.2rem;
+                     overflow: hidden;
+                   }
+          /* mobile view user persona section here we go!!!  */
+                    .personaCards {
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-around;
+                      max-width: 140rem;
+                    }
+                    .userPersona {
+                      background-color: white;
+                      border-radius: 5px;
+                      filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+                      margin: .2rem;
+                      padding: 2.2rem;
+                      max-width: 44rem;
+                    }
+                    .personaIntroBox {
+                      display: flex;
+                      margin-bottom: 2rem;
+                    }
+
+                    .userPersona li {
+                      font-family: 'Source Serif Pro', serif;
+                      font-size: 1.4rem;
+                      font-weight: lighter;
+                      line-height: 2.4rem;
+                      list-style-type: disc;
+                    }
+                    .personaImage img{
+                      width: 100%;
+                      height: auto;
+                      border-radius: 50%;
+                    }
+
+                    .nameBox {
+                      display: flex;
+                      flex-direction: column;
+                      text-align: center;
+                      justify-content: center;
+                    }
+                    .nameBox h5 {
+                      font-size: 1.4rem;
+                      font-weight: lighter;
+                      line-height: 150%
+                    }
+                    .userPersona .quote {
+                      margin: 2.2rem 0rem;
+                    }
+                    .goalsFrustBox {
+                      margin: 0rem 1.2rem;
+                    }
+                    .goalsFrustBox h6{
+                      margin-bottom: 1rem;
+                    }
                  }
-                /* HERE WE GO ON ANOTHER MEDIA QUERY!!! DESKTOP:  */
+      /* HERE WE GO ON ANOTHER MEDIA QUERY!!! DESKTOP:  */
                 @media (min-width: 44rem) {
+                  /* .fullContainer {
+                    width: 100%;
+                    background: linear-gradient(rgba(31, 184, 156, .9), rgba(47, 77, 82, 0.8), rgba(247, 248, 248, 1)),
+                    url(../images/wood-textureBW.jpg);
+                    background-repeat:no-repeat;
+                    -webkit-background-size:cover;
+                    -moz-background-size:cover;
+                    -o-background-size:cover;
+                    background-size:cover;
+                    object-position: 30% 90%;
+                    margin: auto;
+                  } */
+
                   .container {
                     max-width: 140rem;
                     margin: auto;
                   }
                   .navbar {
                     display: flex;
-
-                    padding: 2.4rem 5.5rem;
+                    padding: 2.4rem 2.2rem 2.4rem 5.5rem;
                     justify-content: space-between;
                   }
                   .navbar .menu-btn {
@@ -244,15 +361,93 @@ margin:-5rem 0 0;
                     color: var(--dark)
                   }
                   .navlink a:hover{
-                    color: var(--accentgreen);
+                    color: white;
                   }
+                  .chartsContainerA, .chartsContainerB {
+                    /* display: flex; */
+                    background-color: white;
+                    border-radius: 5px;
+                    filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+                    margin: 1rem;
+                    padding: 2.2rem;
+                    max-width: 34rem;
+                  }
+                  .chartsContainerA h6, .chartsContainerB h6 {
+                    text-align: center;
+                    padding: 1rem 0rem 2.4rem 0rem;
+                    font-size: 1.8rem;
+                  }
+                  .surveyResultsContainers {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    padding-bottom: 2.2rem;
+                    overflow: hidden;
+                  }
+        /* -----end of Charts JS desktop media query section----------- */
+        .personaCards {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          max-width: 140rem;
+        }
+        .userPersona {
+          background-color: white;
+          border-radius: 5px;
+          filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+          margin: .2rem;
+          padding: 2.2rem;
+          max-width: 54rem;
+        }
+        .personaIntroBox {
+          display: flex;
+          margin-bottom: 2rem;
+        }
+
+        .userPersona li {
+          font-family: 'Source Serif Pro', serif;
+          font-size: 1.6rem;
+          font-weight: lighter;
+          line-height: 3rem;
+          list-style-type: disc;
+        }
+        .personaImage img{
+          width: 100%;
+          height: auto;
+          border-radius: 50%;
+        }
+
+        .nameBox {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+        }
+        .nameBox h5 {
+          font-size: 1.6rem;
+          font-weight: lighter;
+          line-height: 150%
+        }
+        .userPersona .quote {
+          margin: 2.2rem 0rem;
+        }
+        .goalsFrustBox {
+          margin: 0rem 1.2rem;
+        }
+        .goalsFrustBox h6{
+          margin: 2rem 0rem;
+          font-size: 1.6rem;
+        }
                 }
 
                       /* THIS IS THE ROW OF CONTENTS */
 .makeitsticky{
   /* position: fixed; */
+  /* background-color: var(--lightgrey); */
 }
 .rowOfContents {
+  /* width: 140rem; */
+  margin: 0 auto;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -290,7 +485,7 @@ h1 {
 h3 {
   font-family: 'work sans', sans-serif;
   color: var(--truebase);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 200;
   padding: 1.5rem 2.2rem 0rem 2.2rem;
 }
@@ -308,10 +503,10 @@ h2 {
 p {
   color: var(--dark);
   font-family: 'Source Serif Pro', serif;
-  padding: 2.2rem;
-  line-height: 145%;
+  padding: 2.25rem;
+  line-height: 165%;
   max-width: 82rem;
-  background-color: var(--lightgrey);
+  /* background-color: var(--lightgrey); */
 }
 #intro p {
   color: var(--truebase);
@@ -321,7 +516,7 @@ p {
 }
 .paragraphBlock {
   /* max-width: 100rem; */
-  background-color: var(--lightgrey);
+  /* background-color: var(--lightgrey); */
   /* margin: 0 auto; */
 }
 .protoButton {
@@ -356,11 +551,22 @@ h4 {
   max-height: 30rem;
   object-fit: cover;
   object-position: left;
-  margin: 0 .8rem 4.6rem .8rem;
+  padding-bottom: 2.2rem;
 }
+.categoryImage2 {
+  border-radius: 5px;
+  width: 100%;
+  min-height: 20rem;
+  max-height: 30rem;
+  object-fit: cover;
+  object-position: 15% 15%;
+  padding-bottom: 2.2rem;
+}
+
 
 h5 {
   padding: 2.2rem;
+  padding-top: 6.2rem;
 }
 
 #research p {
@@ -382,17 +588,16 @@ h6 {
   text-align: center;
   font-weight: lighter;
 }
-.backgroundWrapper{
+/* .backgroundWrapper{
   background-color: var(--lightgrey);
   width: auto;
-  /* max-width: 71.5rem; */
   margin-bottom: 10rem;
 }
 
 #about .backgroundWrapper{
   width: 80rem;
   max-width: 100%;
-}
+} */
 
 .wrapperWRAPPER {
   overflow: visible;
@@ -400,14 +605,14 @@ h6 {
 .compAnalWrapper {
   display: flex;
   flex-wrap: wrap;
+  /* justify-content: center; */
 
 
 }
 .CompAnalItem {
   flex-wrap: wrap;
-
   width: auto;
-  padding: 2.2rem;
+  padding: 1.8rem;
 }
 .detailsBox {
   max-width: 40rem;
@@ -422,7 +627,7 @@ h6 {
   /* align-self: : center;
   justify-self: center; */
   border-radius: 1rem;
-  width: 100%;
+  width: 80%;
   max-width: 9.838rem;
     min-width: 5rem;
   height: auto;
@@ -430,10 +635,10 @@ h6 {
 }
 .compDeets{
   flex-grow: 1;
-  padding-left: 2.2rem;
+  /* padding-left: 1.2rem; */
 }
 .CompAnalItem li{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 150%;
 }
 .pro:before {
@@ -451,79 +656,7 @@ h6 {
 #results {
   padding: 2.2rem;
 }
-.chartsContainerA, .chartsContainerB {
-  background-color: white;
-  border-radius: 5px;
-  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
-  margin: 1rem;
-  padding: 2.2rem;
-  max-width: 34rem;
-}
-.chartsContainerA h6, .chartsContainerB h6 {
-  text-align: center;
-  padding: 1rem 0rem 2.4rem 0rem;
-}
-.surveyResultsContainers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-bottom: 2.2rem;
-  overflow: hidden;
-}
-                      /* USER PERSONA SECTION */
-.personaCards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 140rem;
-}
-.userPersona {
-  /* display: flex; */
-  background-color: white;
-  border-radius: 5px;
-  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
-  margin: .2rem;
-  padding: 2.2rem;
-  max-width: 44rem;
-}
-.personaIntroBox {
-  display: flex;
-  margin-bottom: 2rem;
-}
 
-.userPersona li {
-  font-family: 'Source Serif Pro', serif;
-  font-size: 1.4rem;
-  font-weight: lighter;
-  line-height: 2.08rem;
-  list-style-type: disc;
-}
-.stupidGirl img{
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-}
-
-.nameBox {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}
-.nameBox h5 {
-  font-size: 1.4rem;
-  font-weight: lighter;
-  line-height: 150%
-}
-.userPersona .quote {
-  margin: 2.2rem 0rem;
-}
-.goalsFrustBox {
-  margin: 0rem 1.2rem;
-}
-.goalsFrustBox h6{
-  margin-bottom: 1rem;
-}
                           /* THIS IS THE INFO ARCH SECTION: ; */
 .userFlowImages{
   display: flex;
@@ -570,7 +703,7 @@ h6 {
 #InfoArch .quoteWrapper{
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: space-between;
 }
 
 #testing .quote {
@@ -578,12 +711,15 @@ h6 {
 }
 
 .priorityList {
-    margin: 0rem 2.2rem;
+    /* margin: 0rem 4.2rem;
     font-family: 'Source Serif Pro', serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: lighter;
     line-height: 2.5rem;
-    list-style-type: disc;
+    list-style-type: disc; */
+      padding: 2.25rem 2.25rem 2.25rem 4.2rem;
+      line-height: 165%;
+      list-style-type: disc;
   }
 
 
@@ -705,9 +841,10 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
 }
 
-.versionCompare h6, .landing h6, .dashes h6, .hiFis-mobile h6{
+.versionCompare h6, .landing h6, .dashes h6, .hiFis-mobile h6, .vers1 h6{
   margin-left: 2.2rem;
   margin-top: 2.2rem;
 }
@@ -727,6 +864,9 @@ h6 {
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
   /* grid-area: "landing"; */
 }
+.hiFis-mobile {
+ margin: 0 2.4rem;
+}
 .hiFis-mobile img{
   /* width: 100%; */
   max-width: 100%;
@@ -734,6 +874,14 @@ h6 {
   padding: 2.2rem;
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
   object-fit: contain;
+}
+#conclusion ul {
+  padding: 2.25rem 2.25rem 2.25rem 4.2rem;
+  line-height: 165%;
+  list-style-type: disc;
+}
+#conclusion li {
+  margin-bottom: 1.2rem;
 }
 .ending h6{
   font-size: 2.2rem;
@@ -806,7 +954,7 @@ margin: 0rem auto 5rem auto;
 .footerbar .fa {
   color: var(--accentgreen);
   font-size: 3rem;
-  padding: 0rem 2rem 4.5rem 2rem;
+  padding: 0rem 2rem 2rem 2rem;
 }
 .footerbar p {
   max-width: 100%;

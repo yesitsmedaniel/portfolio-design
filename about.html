@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="css/project.css">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/chocolat.css">
     <!--font-awesome links-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.chocolat.js"></script>
   </head>
   <body>
+
+  <div class="topContainer">
+
+
     <div class="container">
       <div class="aboutHero">
         <nav class="navbar">
@@ -25,25 +32,41 @@
             </ul>
         </nav>
       </div>
+      </div>
+    </div>
     <section id="about">
-      <h1>ABOUT</h1>
-      <h2>I’ve been evolving as a designer for some time. Here’s how my passions and experiences have brought me here today. </h2>
-      <a href="https://drive.google.com/file/d/1rQ2ggqYqQFxaCD7eWsvu_xkQ3GypmEzO/view?usp=sharing"target="_blank">      <input class="resumeButton" type="button" value="résumé">
-            <div class="backgroundWrapper"></a>
+      <div class="insideContainer">
+        <h1>ABOUT</h1>
+        <h2>I’ve been evolving as a designer for some time. Here’s how my passions and experiences have brought me here today. </h2>
+        <a href="https://drive.google.com/file/d/1rQ2ggqYqQFxaCD7eWsvu_xkQ3GypmEzO/view?usp=sharing"target="_blank">      <input class="resumeButton" type="button" value="résumé">
+              <div class="backgroundWrapper"></a>
 
 
 
-        <p>Growing up, I filled sketchbooks with X-Men characters, crafted my own VHS packaging for sci fi movies, and endlessly poured over video game instructional booklets. This is due to a) being a huge nerd, and b) my innate interest in design. Learning how color gives insight into a superhero’s personality, how simple symbols and type hinted at a story’s tone, and how copious information could be bundled, streamlined and delivered to an audience.</p>
-        <h6>EXPLORING MY TALENTS</h6>
-        <p>In college I studied fine arts, exploring ideas of identity and self through realism in painting and drawing. Eventually, it turned out something was missing as an artist (not just money). I wanted more rationale, more practicality, more concrete answers in my work. I secured a role as print designer for a women’s shoe company. As I learned on the fly, I fell back in love with typography - this time logging hours in Adobe Illustrator rather Kidpix. While I never quite got the hang of fashion magazines, I leveled up as a visual communicator and designer.</p>
-        <h6>CHANGE OF PACE</h6>
-        <p>Moving to San Francisco, I took up custom framing–  a secretly grueling world of designing on the fly, keeping promises on tough deadlines, and delivering for people who put their trust in you. Not the most glamorous gig, but this was the cauldron where I learned to be patient, listen, and really understand where people are coming from, and what they are trying to achieve. I love getting to deliver the final product and share in the feelings of success (or sometimes go back to the drawing board).
+          <p>Growing up, I filled sketchbooks with X-Men characters, crafted my own VHS packaging for sci fi movies, and endlessly poured over video game instructional booklets. This is due to a) being a huge nerd, and b) my innate interest in design. Learning how color gives insight into a superhero’s personality, how simple symbols and type hinted at a story’s tone, and how copious information could be bundled, streamlined and delivered to an audience.</p>
+          <h6>EXPLORING MY TALENTS</h6>
+          <p>In college I studied fine arts, exploring ideas of identity and self through realism in painting and drawing. Eventually, it turned out something was missing as an artist (not just money). I wanted more rationale, more practicality, more concrete answers in my work. I secured a role as print designer for a women’s shoe company. As I learned on the fly, I fell back in love with typography - this time logging hours in Adobe Illustrator rather Kidpix. While I never quite got the hang of fashion magazines, I leveled up as a visual communicator and designer.</p>
+          <h6>CHANGE OF PACE</h6>
+          <p>Moving to San Francisco, I took up custom framing–  a secretly grueling world of designing on the fly, keeping promises on tough deadlines, and delivering for people who put their trust in you. Not the most glamorous gig, but this was the cauldron where I learned to be patient, listen, and really understand where people are coming from, and what they are trying to achieve. I love getting to deliver the final product and share in the feelings of success (or sometimes go back to the drawing board).
 
-        <br><br>
-        This is what was missing– collaborating, hashing out the details, and crafting solutions with my visual instincts and analytical point of view. I lived firsthand how design could take a problem, flip it on its head, and ultimately create a sharable experience with others, and positively impact people’s lives.</p>
-        <h6>SCALING UP</h6>
-        <p>Now I’m ready to scale up – I’m studying User Experience Design through Bloc’s comprehensive program, so I can work on projects that make a real difference; whether that’s streamlining business interactions, learning a simple way to budget, or just helping pair the right wine & cheese. Let me know if you have a project or role that you think I could help with!
-        </p>
+          <br><br>
+          This is what was missing– collaborating, hashing out the details, and crafting solutions with my visual instincts and analytical point of view. I lived firsthand how design could take a problem, flip it on its head, and ultimately create a sharable experience with others, and positively impact people’s lives.</p>
+          <h6>SCALING UP</h6>
+          <p>Now I’m ready to scale up – I’m studying User Experience Design through Bloc’s comprehensive program, so I can work on projects that make a real difference; whether that’s streamlining business interactions, learning a simple way to budget, or just helping pair the right wine & cheese. Let me know if you have a project or role that you think I could help with!
+          </p>
+      </div>
+
+    </div>
+    <div class="example666">
+      <a class="chocolat-image" href="images/kobe-red.jpg" alt="" title="Kobe Study">
+        <img width="500" src="images/mini/kobe-red-mini.jpg"/>
+      </a>
+      <a class="chocolat-image" href="images/sunset-green.jpg" alt="" >
+        <img width="500" src="images/mini/sunset-green-mini.jpg"/>
+      </a>
+      <a class="chocolat-image" href="images/meatpacking-blue.jpg" alt="" >
+        <img width="500" src="images/mini/meatpacking-blue-mini.jpg"/>
+      </a>
     </div>
     </section>
 </div>
@@ -75,6 +98,12 @@
       <p>© 2018 Daniel Gaines</p>
     </footer>
   </div>
+  <!-- chocolat stuff -->
+  <script>$(function(){
+    $('.example666').Chocolat({
+                imageSize: 'contain'
+            });  });
+    </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129511019-1"></script>
 <script>
