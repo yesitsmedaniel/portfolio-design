@@ -62,9 +62,9 @@ margin:-5rem 0 0;
 .logo {
   flex-grow: 1;
 }
-.logo img {
+/* .logo img {
     max-width: 5.6rem;
-}
+} */
 
 .fullContainer {
   width: 100%;
@@ -127,9 +127,8 @@ margin:-5rem 0 0;
 
                     }
                      .navbar img {
-                     margin-left: 1.6rem;
-                     margin-top: 0.8rem;
-                     width: 5.6rem;
+                      margin: .8rem 0rem .8rem 1.6rem;
+                     width: 4.6rem;
                      }
 
                     .navbar li a {
