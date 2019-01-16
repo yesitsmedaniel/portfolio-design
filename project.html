@@ -18,30 +18,28 @@
   </head>
   <body>
     <div class="fullContainer">
-    <div class="container">
-      <section id="top">
-          <nav class="navbar">
-            <a href="index.html"><img class="logo" src="images/Logo-DG-70px.trns.png" alt="DG"></a>
-            <input class="menu-btn" type="checkbox" id="menu-btn"/>
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="navLinks">
-              <li class="navlink"><a href="project.html">WORK</a></li>
-              <li class="navlink"><a href="about.html">ABOUT</a></li>
-              <li class="navlink"><a href="mailto:dannygaines@gmail.com">CONTACT</a></li>
-            </ul>
-          </nav>
-
-      </section>
+      <div class="container">
+        <section id="top">
+            <nav class="navbar">
+              <a href="index.html"><img class="logo" src="images/Logo-DG-70px.trns.png" alt="DG"></a>
+              <input class="menu-btn" type="checkbox" id="menu-btn"/>
+              <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+              <ul class="navLinks">
+                <li class="navlink"><a href="project.html">WORK</a></li>
+                <li class="navlink"><a href="about.html">ABOUT</a></li>
+                <li class="navlink"><a href="mailto:dannygaines@gmail.com">CONTACT</a></li>
+              </ul>
+            </nav>
+        </section>
     <!-- testing container trix -->
-    </div>
-
+      </div>
       <!-- CASE HERO -->
       <section id="CaseStudyHero">
         <img src="images/CASE-HERO-DARK.png" alt="Case Study Hero Image">
       </section>
-      </div><!--
+   </div><!--
        Row of Contents
-    --><div class="makeitsticky">
+  --><div class="makeitsticky">
         <ul class="rowOfContents">
           <a href="#top"><li>INTRO</li></a>
           <a href="#research"><li>RESEARCH</li></a>
@@ -52,9 +50,9 @@
         </ul>
 <!-- CASE STUDY -->
         <!-- INTRO -->
-        <div class="container">
+      <div class="container">
         <div class="insideContainer">
-        <section id="intro">
+          <section id="intro">
           <br>
           <h1>KERNEL</h1>
           <h3>UX RESEARCH • BRANDING & VISUAL DESIGN</h3>
@@ -73,7 +71,6 @@
         <!-- RESEARCH -->
         <section id="research">
           <h4>RESEARCH</h4>
-
           <img class="categoryImage" src="images/research-hero-image.png" alt="Research Section Image">
             <div class="insideContainer">
             <h5>COMPETITIVE ANALYSIS</h5>
@@ -124,18 +121,16 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <p>The competition is tough with giants like Google and Dropbox, but they are both very focused on text and not so visual. To be successful, a new product would need to be distinct, fun, visual, while keeping functionality simple and clear. <a href="https://docs.google.com/document/d/1ZiPqSD-fFCGDaIn5mBocPRD7zekt_19E1kyjcPaxnw0/edit?usp=sharing"target="_blank">See the <b>full analysis</b> here.</a></p><br>
             </div>
-
-
-            <p>The competition is tough with giants like Google and Dropbox, but they are both very focused on text and not so visual. To be successful, a new product would need to be distinct, fun, visual, while keeping functionality simple and clear. <a href="https://docs.google.com/document/d/1ZiPqSD-fFCGDaIn5mBocPRD7zekt_19E1kyjcPaxnw0/edit?usp=sharing"target="_blank">See the <b>full analysis</b> here.</a></p><br>
-          </div>
-          <h5>SURVEYS</h5>
-          <div class="backgroundWrapper">
-            <p>I employed a short survey to investigate how people currently use Cloud Storage systems and other relevant habits. How do they save important things they find on the internet? Do they share these files with others, and if so how? What problems do they run into? Are they interested in getting more organized, or having a single storage spot for everything?
-            <br>
-            <br>
-            My 40 respondents indicated that while they already use a cloud storage system, they're open to new and improved ones. The survey validated the project premise and provided insights into how people actually use these products, and what real people are actually looking for. See <a href="https://goo.gl/forms/3JvryBpqLa55Uliu2"target="_blank"><b>the survey and the results</b></a> here.</p>
-          </div>
+            <h5>SURVEYS</h5>
+            <div class="backgroundWrapper">
+              <p>I employed a short survey to investigate how people currently use Cloud Storage systems and other relevant habits. How do they save important things they find on the internet? Do they share these files with others, and if so how? What problems do they run into? Are they interested in getting more organized, or having a single storage spot for everything?
+              <br>
+              <br>
+              My 40 respondents indicated that while they already use a cloud storage system, they're open to new and improved ones. The survey validated the project premise and provided insights into how people actually use these products, and what real people are actually looking for. See <a href="https://goo.gl/forms/3JvryBpqLa55Uliu2"target="_blank"><b>the survey and the results</b></a> here.</p>
+            </div>
 
             <!-- HERE IS MY CHART JS SECTION!  -->
             <div class="surveyResultsContainers">
@@ -167,182 +162,179 @@
                </div>
               </div>
             </div>
-                        <script> //chart 1
-                Chart.defaults.global.defaultFontSize = 14;
+                <script> //chart 1
+                  Chart.defaults.global.defaultFontSize = 14;
 
-                var ctx = document.getElementById("myChart");
-                var myChart = new Chart(ctx, {
-                    type: 'doughnut',
-                    data: {
-                        labels: ["% screencapture from the web", "% disinterested"],
-                        datasets: [{
-                            label: '# of Votes',
-                            data: [75, 25],
-                            backgroundColor: [
-                                'rgba(128, 119, 184, 1)',
-                                'rgba(128, 119, 184, .3)',
-                            ],
-                            borderWidth: 3
-                        }]
-                    },
-                    options: {
-                      rotation: 0.7,
-                        scales: {
-                            yAxes: [{
-                              display: false
+                  var ctx = document.getElementById("myChart");
+                  var myChart = new Chart(ctx, {
+                      type: 'doughnut',
+                      data: {
+                          labels: ["% screencapture from the web", "% disinterested"],
+                          datasets: [{
+                              label: '# of Votes',
+                              data: [75, 25],
+                              backgroundColor: [
+                                  'rgba(128, 119, 184, 1)',
+                                  'rgba(128, 119, 184, .3)',
+                              ],
+                              borderWidth: 3
+                          }]
+                      },
+                      options: {
+                        rotation: 0.7,
+                          scales: {
+                              yAxes: [{
+                                display: false
 
-                            }]
-                        }
-                    }
-                });
+                              }]
+                          }
+                      }
+                  });
                 </script>
                 <script> //chart 2
-                var ctx = document.getElementById("myChart2");
-                var myChart2 = new Chart(ctx, {
-                    type: 'doughnut',
-                    data: {
-                        labels: ["% share items through text/email", "% have alternate methods"],
-                        datasets: [{
-                            label: '# of Votes',
-                            data: [82, 18],
-                            backgroundColor: [
-                              'rgba(128, 119, 184, 1)',
-                              'rgba(128, 119, 184, .3)',
-                            ],
-                            borderWidth: 3
-                        }]
-                    },
-                    options: {
-                      rotation: 0.6,
-                        scales: {
-                            yAxes: [{
-                              display: false
-                            }]
-                        }
-                    }
-                });
-              </script>
-              <script> //chart 3
-              var ctx = document.getElementById("myChart3");
-              var myChart3 = new Chart(ctx, {
-                  type: 'doughnut',
-                  data: {
-                      labels: ["% share items to big for text/email", "% already have a solution"],
-                      datasets: [{
-                          label: '# of Votes',
-                          data: [55, 45],
-                          backgroundColor: [
-                            'rgba(128, 119, 184, 1)',
-                            'rgba(128, 119, 184, .3)',
-                          ],
-                          borderWidth: 3
-                            }]
-                        },
-
-                  options: {
-                    rotation: 1.35,
-                      scales: {
-                          yAxes: [{
-                            display: false
-
+                  var ctx = document.getElementById("myChart2");
+                  var myChart2 = new Chart(ctx, {
+                      type: 'doughnut',
+                      data: {
+                          labels: ["% share items through text/email", "% have alternate methods"],
+                          datasets: [{
+                              label: '# of Votes',
+                              data: [82, 18],
+                              backgroundColor: [
+                                'rgba(128, 119, 184, 1)',
+                                'rgba(128, 119, 184, .3)',
+                              ],
+                              borderWidth: 3
                           }]
+                      },
+                      options: {
+                        rotation: 0.6,
+                          scales: {
+                              yAxes: [{
+                                display: false
+                              }]
+                          }
                       }
-                  }
-                });
-              </script>
-              <script> //chart 4
-              var ctx = document.getElementById("myChart4");
-              var myChart4 = new Chart(ctx, {
-                  type: 'doughnut',
-                  data: {
-                      labels: ["% search by typing/talking", "% scroll through a list", "navigate through folders"],
-                      datasets: [{
-                          label: '# of Votes',
-                          data: [46.2, 25, 21],
-                          backgroundColor: [
-                              'rgba(255, 56, 100, 1)',
-                              'rgba(255, 193, 94, 1)',
-                              'rgba(128, 119, 184, 1)',
-                          ],
-                          borderWidth: 3
-                            }]
-                        },
-                  options: {
-                    rotation: 1.56,
-                      scales: {
-                          yAxes: [{
-                            display: false
+                  });
+                </script>
+                <script> //chart 3
+                  var ctx = document.getElementById("myChart3");
+                  var myChart3 = new Chart(ctx, {
+                      type: 'doughnut',
+                      data: {
+                          labels: ["% share items to big for text/email", "% already have a solution"],
+                          datasets: [{
+                              label: '# of Votes',
+                              data: [55, 45],
+                              backgroundColor: [
+                                'rgba(128, 119, 184, 1)',
+                                'rgba(128, 119, 184, .3)',
+                              ],
+                              borderWidth: 3
+                                }]
+                            },
 
-                          }]
+                      options: {
+                        rotation: 1.35,
+                          scales: {
+                              yAxes: [{
+                                display: false
+
+                              }]
+                          }
                       }
-                  }
-                });
-              </script>
-              <script> //chart 5
-              var ctx = document.getElementById("myChart5");
-              var myChart5 = new Chart(ctx, {
-                  type: 'doughnut',
-                  data: {
-                      labels: ["% interested in organizing apps", "% disinterested"],
-                      datasets: [{
-                          label: '# of Votes',
-                          data: [75, 25],
-                          backgroundColor: [
-                              'rgba(255, 193, 94, 1)',
-                              'rgba(255, 193, 94, .3)',
-                          ],
-                          borderWidth: 3
-                            }]
-                        },
+                    });
+                </script>
+                <script> //chart 4
+                  var ctx = document.getElementById("myChart4");
+                  var myChart4 = new Chart(ctx, {
+                      type: 'doughnut',
+                      data: {
+                          labels: ["% search by typing/talking", "% scroll through a list", "navigate through folders"],
+                          datasets: [{
+                              label: '# of Votes',
+                              data: [46.2, 25, 21],
+                              backgroundColor: [
+                                  'rgba(255, 56, 100, 1)',
+                                  'rgba(255, 193, 94, 1)',
+                                  'rgba(128, 119, 184, 1)',
+                              ],
+                              borderWidth: 3
+                                }]
+                            },
+                      options: {
+                        rotation: 1.56,
+                          scales: {
+                              yAxes: [{
+                                display: false
 
-                  options: {
-                    rotation: 0.7,
-                      scales: {
-                          yAxes: [{
-                            display: false
-
-                          }]
+                              }]
+                          }
                       }
-                  }
-                });
-              </script>
-              <script> //chart 6
-              var ctx = document.getElementById("myChart6");
-              var myChart6 = new Chart(ctx, {
-                  type: 'doughnut',
-                  data: {
-                      labels: ["% prioritize an easy search function", "% disinterested"],
-                      datasets: [{
-                          label: '# of Votes',
-                          data: [75, 25],
-                          backgroundColor: [
-                              'rgba(255, 56, 100, 1)',
-                              'rgba(255, 56, 100, .3)',
-                          ],
-                          borderWidth: 3
-                            }]
-                        },
+                    });
+                </script>
+                <script> //chart 5
+                  var ctx = document.getElementById("myChart5");
+                  var myChart5 = new Chart(ctx, {
+                      type: 'doughnut',
+                      data: {
+                          labels: ["% interested in organizing apps", "% disinterested"],
+                          datasets: [{
+                              label: '# of Votes',
+                              data: [75, 25],
+                              backgroundColor: [
+                                  'rgba(255, 193, 94, 1)',
+                                  'rgba(255, 193, 94, .3)',
+                              ],
+                              borderWidth: 3
+                                }]
+                            },
 
-                  options: {
-                    rotation: 0.7,
-                      scales: {
-                          yAxes: [{
-                            display: false
+                      options: {
+                        rotation: 0.7,
+                          scales: {
+                              yAxes: [{
+                                display: false
 
-                          }]
+                              }]
+                          }
                       }
-                  }
-                });
-              </script>
+                    });
+                </script>
+                <script> //chart 6
+                  var ctx = document.getElementById("myChart6");
+                  var myChart6 = new Chart(ctx, {
+                      type: 'doughnut',
+                      data: {
+                          labels: ["% prioritize an easy search function", "% disinterested"],
+                          datasets: [{
+                              label: '# of Votes',
+                              data: [75, 25],
+                              backgroundColor: [
+                                  'rgba(255, 56, 100, 1)',
+                                  'rgba(255, 56, 100, .3)',
+                              ],
+                              borderWidth: 3
+                                }]
+                            },
+
+                      options: {
+                        rotation: 0.7,
+                          scales: {
+                              yAxes: [{
+                                display: false
+
+                              }]
+                          }
+                      }
+                    });
+                </script>
             <!-- THE END OF MY CHART JS ! -->
-
-
-          <h5>USER PERSONAS</h5>
-
+            <h5>USER PERSONAS</h5>
             <p>Based on the overarching trends of my survey, two distinct personas emerged, each with different needs from a cloud storage system:
             </p>
           </div>
-            <div class="personaCards">
+          <div class="personaCards">
               <div class="userPersona">
                 <div class="personaIntroBox">
                   <div class="personaImage">
@@ -399,14 +391,12 @@
                   </ul>
                 </div>
               </div>
-
-        </div><br>
+          </div><br>
           <div class="insideContainer">
             <p>Both personas want quick visuals of what the files they need, but their use of folders is where they diverge. Skipper would rather have her files automatically-organized for her, saving time and mental energy. Michael’s company uses a stricter file management protocol and will be setting up his own folders accordingly so that his team is all on the same page.<br><br>
             Equipped with my Cloud Storage market research and fleshed-out User Personas, I started building the features that would make up the app, tailored to real users’ needs.</p>
           </div>
         </section>
-
         <!-- INFO ARCH -->
         <section id="InfoArch">
           <h4>INFORMATION ARCHITECTURE</h4>
@@ -417,7 +407,7 @@
               <p>I created a list of User Stories, actions that our users would need to undertake while using the app, and then sorted them by priority. At the very top of these priority lists were account creation, adding files to their storage, and searching these files out. As a revenue generator, it’s imperative users are able to upgrade to a paid-subscription account. <a href="https://docs.google.com/spreadsheets/d/1N5ekd0ijs9eZeY1PsRw-xDwsu36dzas3vGe-SodZxW8/edit?usp=sharing"target="_blank"><b>See all the user stories here.</b></a></p>
             </div>
           </div>
-              <div class="quoteWrapper">
+          <div class="quoteWrapper">
                 <div class="quote">
                   <h6>"As a new user, I want to upload a file"</h6>
                 </div>
@@ -427,16 +417,16 @@
                 <div class="quote">
                   <h6>"As a new user, I want to register for an account"</h6>
                 </div>
-              </div>
-              <div class="insideContainer">
+          </div>
+          <div class="insideContainer">
               <p>This process prescribed the minimum viable product for Kernel to be successful: a cloud storage app where users can upload and store, view, download, and share files. Users can decide how to specifically sort their files, or let the app take care of it for them. </p>
 
-          <h5>USER FLOWS & SITE MAP</h5>
-            <p>I diagrammed flows of the most high priority user stories to make sure these tasks could be accomplished quickly and without too many clicks. Additionally, I wanted to include multiple routes to find files, based on a given user’s preferred approach. I built the Sitemap to flesh out all the screens that would require wireframe modeling. <a href="https://www.dropbox.com/s/hr0s3lr0ineygus/Userflows-Revised.png?dl=0" target="_blank"><b>Check them out here.</b></a></p>
+              <h5>USER FLOWS & SITE MAP</h5>
+              <p>I diagrammed flows of the most high priority user stories to make sure these tasks could be accomplished quickly and without too many clicks. Additionally, I wanted to include multiple routes to find files, based on a given user’s preferred approach. I built the Sitemap to flesh out all the screens that would require wireframe modeling. <a href="https://www.dropbox.com/s/hr0s3lr0ineygus/Userflows-Revised.png?dl=0" target="_blank"><b>Check them out here.</b></a></p>
           </div>
-          <!-- <div class="userFlowImages"> -->
+            <!-- <div class="userFlowImages"> -->
             <!-- LIGHTBOX HERE!!! -->
-              <div class="example666">
+          <div class="example666">
                 <a class="chocolat-image" href="images/userflows-kernel.01b.jpg" alt="" title="User Flows & Site Map">
                   <img width="500" src="images/mini/userflows-kernel.01b.jpg"/>
                 </a>
@@ -450,8 +440,7 @@
             <!-- end of lightbox testing -->
           <!-- </div> -->
           <div class="insideContainer">
-          <h5>WIREFRAMES</h5>
-
+            <h5>WIREFRAMES</h5>
             <p>I sketched many iterations of Kernel’s dashboard, with the following primary goals:</p>
             <ul class="priorityList">
               <li>A prominent "ADD" button</li>
@@ -461,8 +450,8 @@
             <p><a href="https://www.dropbox.com/sh/dfqcjccpo1hh308/AAC2EvY2QeTGDl9_uL-mJyyWa?dl=0"target="_blank"><b>I then translated my paper sketches into rough digital format using Balsamiq. </b></a></p>
           </div>
             <!-- LIGHTBOX!! -->
-            <div class="sketchPhotos">
-              <div class="example666">
+
+          <div class="example666">
                 <a class="chocolat-image" href="images/wireframes-kernel.02.jpg" alt="" title="Wireframes">
                   <img width="300" src="images/mini/wireframes-kernel.02.jpg" />
                 </a>
@@ -481,33 +470,33 @@
                 <a class="chocolat-image" href="images/CloudStorage-Options.png" alt="">
                   <img width="300" src="images/CloudStorage-Options.png" />
                 </a>
-              </div>
-            </div>
-            <div class="insideContainer">
+          </div>
+
+          <div class="insideContainer">
               <p>I then recruited subjects for remote usability testing. This quickly identified some trouble spots:</p>
               <ul class="priorityList">
                 <li>Confusion about the product's purpose</li>
                 <li>Confusion between the important “Add Item” button and the lower priority “Add New Folder” button.</li>
               </ul>
               <p>I’d have to invite the users down the page to make the Welcome Page more clear. I needed significant adjustments to the dashboard to keep things simple. With this initial feedback on the basic interface, I was ready to start crafting the product's identity.</p><br>
-            </div>
+          </div>
         </section>
         <!-- BRANDING & VIZ DESIGN -->
         <section id="brandingDesign">
           <h4>BRANDING & VISUAL DESIGN</h4>
           <img class="categoryImage" src="images/branding-hero-image.png" alt="Branding Image">
           <div class="insideContainer">
-          <h5>LOGO DESIGN</h5>
-          <div class="backgroundWrapper">
-            <p>Kernel needs a modern aesthetic that shows it can compete with its competitors like Google Drive and Dropbox, by infusing it with bold colors to stand out, with an illustrative style to maintain a light-hearted sensibility. <br>
-            <br>
-            I mind-mapped concepts and sketched ideas to zero-in on a popcorn bucket - and the metaphor of a kernel as an idea that our users want to store. Rather than going too literal- my logo developed from the idea of the kernel bursting into it’s popped shape, and melding that with the letter K. I chose Dosis for the Logotype, button text and technical information, while using Lato for paragraph and conversational text.
-           <a href="https://docs.google.com/document/d/12-OpLkqUdrowpG8GwASJKklv4e-CO1qB3Ykt6fpD_R0/edit?usp=sharing"target="_blank"><b>See some more in-depth preference tests I ran here. </b></a></p>
+            <h5>LOGO DESIGN</h5>
+            <div class="backgroundWrapper">
+              <p>Kernel needs a modern aesthetic that shows it can compete with its competitors like Google Drive and Dropbox, by infusing it with bold colors to stand out, with an illustrative style to maintain a light-hearted sensibility. <br>
+              <br>
+              I mind-mapped concepts and sketched ideas to zero-in on a popcorn bucket - and the metaphor of a kernel as an idea that our users want to store. Rather than going too literal- my logo developed from the idea of the kernel bursting into it’s popped shape, and melding that with the letter K. I chose Dosis for the Logotype, button text and technical information, while using Lato for paragraph and conversational text.
+               <a href="https://docs.google.com/document/d/12-OpLkqUdrowpG8GwASJKklv4e-CO1qB3Ykt6fpD_R0/edit?usp=sharing"target="_blank"><b>See some more in-depth preference tests I ran here. </b></a></p>
+            </div>
           </div>
-          </div>
-          <div class="brandPhotos">
-            <div class="sketchPhotos">
-              <div class="example666">
+          <!-- <div class="brandPhotos"> -->
+            <!-- <div class="sketchPhotos"> -->
+          <div class="example666">
                 <a class="chocolat-image" href="images/branding.kernel-sketches.01.jpg" alt="branding sketches" title="Branding Sketches & Designs">
                   <img width="300" src="images/mini/branding.kernel-sketches.01.jpg" />
                 </a>
@@ -526,8 +515,6 @@
                 <a class="chocolat-image" href="images/Yellow-Back-Logo.png" alt="logo on purple">
                   <img width="300" src="images/Yellow-Back-Logo.png" />
                 </a>
-              </div>
-            </div>
           </div>
           <div class="insideContainer">
             <h5>COLOR SCHEME</h5>
@@ -563,42 +550,38 @@
                 </div>
               </div>
             </div>
-
           </div>
           <div class="insideContainer">
             <h5>ICONS & IMAGERY</h5>
           </div>
-          <div class="backgroundWrapper">
-            <div class="iconImages">
-              <div class="example666">
-                <a class="chocolat-image" href="images/branding-sketches.jpg" alt="branding sketches" title="Content Sketches & Designs">
-                  <img width="300" src="images/mini/branding-sketches.jpg" />
-                </a>
-                <a class="chocolat-image" href="images/usage-sketches.jpg" alt="branding sketches">
-                  <img width="300" src="images/mini/usage-sketches.jpg" />
-                </a>
-                <a class="chocolat-image" href="images/laptop-4x.png" alt="laptop">
-                  <img width="300" src="images/icons-laptop.png" />
-                </a>
-                <a class="chocolat-image" href="images/icons-bucket.png" alt="laptop">
-                  <img width="300" src="images/icons-bucket.png" />
-                </a>
-                <a class="chocolat-image" href="images/icons-folders-4x.png" alt="folders">
-                  <img width="300" src="images/icons-folders.png" />
-                </a>
-                <a class="chocolat-image" href="images/icons-color-4x.png" alt="color">
-                  <img width="300" src="images/icons-color.png" />
-                </a>
-              </div>
-            </div>
+          <!-- <div class="backgroundWrapper"> -->
+            <!-- <div class="iconImages"> -->
+          <div class="example666">
+              <a class="chocolat-image" href="images/branding-sketches.jpg" alt="branding sketches" title="Content Sketches & Designs">
+                <img width="300" src="images/mini/branding-sketches.jpg" />
+              </a>
+              <a class="chocolat-image" href="images/usage-sketches.jpg" alt="branding sketches">
+                <img width="300" src="images/mini/usage-sketches.jpg" />
+              </a>
+              <a class="chocolat-image" href="images/laptop-4x.png" alt="laptop">
+                <img width="300" src="images/icons-laptop.png" />
+              </a>
+              <a class="chocolat-image" href="images/icons-bucket.png" alt="laptop">
+                <img width="300" src="images/icons-bucket.png" />
+              </a>
+              <a class="chocolat-image" href="images/icons-folders-4x.png" alt="folders">
+                <img width="300" src="images/icons-folders.png" />
+              </a>
+              <a class="chocolat-image" href="images/icons-color-4x.png" alt="color">
+                <img width="300" src="images/icons-color.png" />
+              </a>
           </div>
-
         </section>
         <!-- TESTING -->
         <section id="testing">
           <h4>TESTING</h4>
-            <img class="categoryImage" src="images/Testing-hero.png" alt="Testing Image">
-            <div class="insideContainer">
+          <img class="categoryImage" src="images/Testing-hero.png" alt="Testing Image">
+          <div class="insideContainer">
             <h5>PROTOTYPE & PREFERENCE TESTING</h5>
             <div class="backgroundWrapper">
               <p>Using the Invision App, I created a Hi-Fidelity prototype to test both its functionality and it's visual design.<br><br>
@@ -606,18 +589,17 @@
               They were successful at their specific tasks, but the purpose was still unclear. As much as the bold “GET STARTED” button directed them, they wanted to interact with the top right of the Landing Page in a way that they could not. I also realized that the Home Page rolled out the content too slowly and I was forcing my users to piece together a puzzle, rather than properly introducing them to Kernel. I’d still have to make some changes. <a href="https://docs.google.com/spreadsheets/d/1yPvPrcvZzTqfte7_js5gVJ7yx0SFQinHAjsmulKZ49w/edit?usp=sharing"target="_blank"><b>See my test notes here.</b></a><br><br>
               Personally I felt my dashboard was a little bland, and wanted statistical feedback to justify more color. The results were overwhelmingly in favor of more color - but one “against” comment stood out:</p>
             </div>
-              <div class="quote">
+            <div class="quote">
                 <h6>“The White Background gives me the illusion to free space or empty space.. and for cloud storage you want something not cluttered, and you want, well, space.”</h6>
-              </div>
+            </div>
               <p>I took this conceptual critique of the dashboard and applied it where it was really needed: the landing page. The saturated and bold colors weighed it down and had the wrong feeling. I decided to give it an overhaul based on what I’d learned.</p>
-            </div>
-            </div>
-            <div class="insideContainer">
+          </div>
+          <div class="insideContainer">
               <h5>VERSION 2 ADJUSTMENTS</h5>
                 <p>I pulled out 90% of the background color to let the Landing Page breathe. I realized not every color from my scheme’s arsenal needed to be applied, which simplified everything. I built a Features List which not only spelled out what Kernel is specifically about, but also lead the viewer further down the page. I took a more Responsive Design approach and considered how the static assets would condense as the browser shrinks. Finally I condensed and simplified the vertical real estate at the top of the dash.</p>
-              <!-- <div class="versionCompare"> -->
-            </div>
-            <div class="example666">
+          </div>
+            <!-- <div class="versionCompare"> -->
+          <div class="example666">
               <div class="vers1">
                 <h6>VERSION 1</h6>
                 <a class="chocolat-image" href="images/version1-landing.png"   alt="branding sketches" title="VERSION 1">
@@ -630,23 +612,24 @@
                   <img src="images/mini/version2-landing-mini.png" />
                 </a>
               </div>
-            </div>
-            <div class="insideContainer">
-                <p>I fleshed out and expanded the access to the sign up process - further delineating the specific information needed for each plan. As the user signs in for the first time - the empty states guide the user to action.</p>
-            </div>
-              <div class="hiFis">
-                <div class="landing">
+          </div>
+          <!-- </div> -->
+          <div class="insideContainer">
+            <p>I fleshed out and expanded the access to the sign up process - further delineating the specific information needed for each plan. As the user signs in for the first time - the empty states guide the user to action.</p>
+          </div>
+          <div class="hiFis">
+            <div class="landing">
                   <h6>LANDING PAGE</h6>
                   <img src="images/Welcome.png" alt="">
-                </div>
+            </div>
                 <div class="dashes">
                   <h6>DASHBOARD SCREENS</h6>
                   <img src="images/EmptyState.png" alt="empty state">
                   <img src="images/Dash-revamp.png" alt="Dashboard">
                   <img src="images/Grandma-Grampa.png" alt="Grandma + Grampa">
                 </div>
-              </div>
-              <div class="hiFis-mobile">
+          </div>
+          <div class="hiFis-mobile">
                 <h6>MOBILE SCREENS</h6>
                 <img src="images/mobile-screens.png" alt="">
               </div>
@@ -664,11 +647,10 @@
                   </div>
                 </div>
               </div> -->
-            <div class="insideContainer">
+          <div class="insideContainer">
               <p>Check out the Invision prototype and see how it works!</p>
               <a href="https://invis.io/T7IB1RLN9AQ#/295778650_More_Air_-5-"target="_blank"><input class="protoButton" type="button" value="CLICKABLE PROTOTYPE"></a>
-            </div>
-
+          </div>
         </section>
         <!-- CONCLUSION -->
         <section id="conclusion">
@@ -689,30 +671,21 @@
                 More time spent in the initial research and ideation phase could have yielded a sharper concept to set itself even further apart from the competition. Specifically by using follow-up surveys to dig even deeper into existing user habits, and zoom in more closely on a target demographic.<br><br>With more time, I would like to carry the illustrations further through the app,  and refine them through more iterations. Finally, the most valuable learning came from the feedback of others. Outside points of view revealed the sharpest insights to the problems at hand.</p>
             </div>
           </div>
-
-          </div>
-
-
         </section>
-        <script>
-
-        </script>
         <!-- END OF STUDY -->
         <section id="endOfStudy">
           <div class="ending">
             <h6>That's the end of this case study!</h6>
           </div>
           <a href="#top"><input class="topButton" type="button" value="BACK TO TOP"></a>
-
           <!-- commenting these out til i have a case study! -->
           <!-- <div class="prevNextbuttons">
             <input class="prevStudy" type="button" value="PREVIOUS">
             <input class="nextStudy" type="button" value="NEXT STUDY">
           </div> -->
-
         </section>
       </div>
-      </div>
+     </div>
         <!-- HERE IS THE FOOTER  -->
         <footer class="footerbar">
           <h4>Thanks for stopping by. Hit me up if you'd like to chat!</h4>
