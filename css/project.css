@@ -299,7 +299,7 @@ margin:-5rem 0 0;
                       margin-bottom: 1rem;
                     }
                  }
-      /* HERE WE GO ON ANOTHER MEDIA QUERY!!! DESKTOP:  */
+      /* DESKTOP !! HERE WE GO ON ANOTHER MEDIA QUERY!!! DESKTOP:  */
                 @media (min-width: 44rem) {
                   /* .fullContainer {
                     width: 100%;
@@ -373,6 +373,12 @@ margin:-5rem 0 0;
                     justify-content: space-around;
                     padding-bottom: 2.2rem;
                     overflow: hidden;
+                  }
+
+                  .NewList {
+                    line-height: 3.4rem;
+                    padding-left: 4.4rem;
+                    list-style-type: disc;
                   }
         /* -----end of Charts JS desktop media query section----------- */
         .personaCards {
@@ -541,16 +547,17 @@ h4 {
   max-height: 30rem;
   object-fit: cover;
   object-position: left;
-  padding-bottom: 2.2rem;
+  /* padding-bottom: 2.2rem; */
 }
 .categoryImage2 {
   border-radius: 5px;
   width: 100%;
+  /* max-width: 1300px; */
   min-height: 20rem;
   max-height: 30rem;
   object-fit: cover;
   object-position: 15% 15%;
-  padding-bottom: 2.2rem;
+  /* padding-bottom: 2.2rem; */
 }
 
 
@@ -699,6 +706,28 @@ h6 {
 #testing .quote {
   max-width: 90rem;
 }
+#research .quoteWrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#research .quote {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  margin: 2.2rem;
+  padding: 3.2rem 2.2rem;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+  min-width: 25rem;
+  max-width: 40rem;
+}
+.highlights {
+  font-size: 5.4rem;
+  color: var(--truebase);
+  font-weight: lighter;
+}
+
 
 .priorityList {
     /* margin: 0rem 4.2rem;
@@ -763,7 +792,15 @@ h6 {
   margin: 2rem;
   border-radius: 5px;
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
-
+}
+.colorSchemeBlocks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+  margin: 2rem;
+  border-radius: 2px;
+  /* filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25)); */
 }
 .oneDotBlock{
   display: flex;
@@ -775,7 +812,30 @@ h6 {
   /* background-color: white;
   border-radius: 5px; */
 }
+.oneBlokBlock{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: left;
+  margin: 1.5rem;
+  /* padding: 1.5rem; */
+}
+.oneGradientBlock{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: left;
+  margin: 1.5rem;
+  /* padding: 1.5rem; */
+}
+
 .oneDotBlock p {
+  font-size: 1.4rem;
+  font-family: 'work sans';
+  padding: .5rem;
+  background-color: transparent;
+}
+.oneBlokBlock p {
   font-size: 1.4rem;
   font-family: 'work sans';
   padding: .5rem;
@@ -787,6 +847,36 @@ h6 {
   height: 9.2rem;
   border-radius: 50%;
   margin-bottom: 2rem;
+}
+.oneBlok {
+  /* border: 3px solid red; */
+  width: 18.2rem;
+  height: 9.2rem;
+  border-radius: 1.2rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.15));
+}
+.gradientblock {
+  /* border: 3px solid red; */
+  width: 36.2rem;
+  height: 9.2rem;
+  border-radius: 1.2rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.15));
+}
+.oneGradientBlock p {
+  font-size: 1.4rem;
+  font-family: 'work sans';
+  padding: .5rem;
+  background-color: transparent;
+}
+
+.bluegradient{
+  background: linear-gradient(to right, #7492DB, #FBC8B9);
+}
+
+.softgradient{
+  background: linear-gradient(to right, #F8EAE8, #FFFFFF);
 }
 
 .dotPurple{
@@ -803,6 +893,21 @@ h6 {
 }
 .dotBeige {
   background-color: #efedce;
+}
+.dotDark {
+  background-color: #1b3d62;
+}
+.dotBlue {
+  background-color: #074ed8;
+}
+.dotCoral {
+  background-color: #fca68a;
+}
+.dotCoral2 {
+  background-color: #f7ded4;
+}
+.dotOffwhite{
+  background-color: #fcfcf9;
 }
 
 #testing .quote {
@@ -832,7 +937,14 @@ h6 {
   justify-content: space-around;
 
 }
-
+.testvids {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.vidnest {
+  margin: 1.2rem;
+}
 .versionCompare h6, .landing h6, .dashes h6, .hiFis-mobile h6, .vers1 h6{
   margin-left: 2.2rem;
   margin-top: 2.2rem;
