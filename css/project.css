@@ -937,7 +937,14 @@ h6 {
   justify-content: space-around;
 
 }
-
+.testvids {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.vidnest {
+  margin: 1.2rem;
+}
 .versionCompare h6, .landing h6, .dashes h6, .hiFis-mobile h6, .vers1 h6{
   margin-left: 2.2rem;
   margin-top: 2.2rem;
