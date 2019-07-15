@@ -298,7 +298,11 @@ margin:-5rem 0 0;
                     .goalsFrustBox h6{
                       margin-bottom: 1rem;
                     }
-                 }
+                    .NewList {
+                      padding: 2.25rem 2.25rem 2.25rem 4.2rem;
+                      line-height: 165%;
+                      list-style-type: disc;
+                    }
       /* DESKTOP !! HERE WE GO ON ANOTHER MEDIA QUERY!!! DESKTOP:  */
                 @media (min-width: 44rem) {
                   /* .fullContainer {
