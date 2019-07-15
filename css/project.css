@@ -303,6 +303,7 @@ margin:-5rem 0 0;
                       line-height: 165%;
                       list-style-type: disc;
                     }
+                  }
       /* DESKTOP !! HERE WE GO ON ANOTHER MEDIA QUERY!!! DESKTOP:  */
                 @media (min-width: 44rem) {
                   /* .fullContainer {
