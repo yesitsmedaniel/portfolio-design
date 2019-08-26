@@ -22,13 +22,16 @@ body {
 
 }
 a {
-  all: unset;
+  text-decoration: none;
+}
+.hero a:link {
+  color: #18282A;
 }
 a:visited{
   color: #f7f8f8;
 }
 .hero a:hover{
-  color: var(--accentgreen);
+  background-color: var(--accentgreen);
   /* text-shadow: 0px 2px 0 rgba(255, 255, 255, 1); */
 }
                             /* WELCOME TO MY NAVIGATION ADVENTURE */

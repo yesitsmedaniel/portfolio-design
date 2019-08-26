@@ -21,9 +21,21 @@ body {
   /* overflow-x: hidden; */
 }
 a {
-  all: unset;
+  /* all: unset; */
+  text-decoration: none;
   cursor: pointer;
 }
+a:link {
+  color: var(--dark);
+}
+a:visited {
+  color: var(--dark);
+}
+p a:link {
+  /* font-weight: bolder; */
+  /* border: 2px solid red; */
+}
+
 a:hover {
   cursor: pointer;
   color: var(--accentgreen);
