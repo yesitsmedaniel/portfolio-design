@@ -23,7 +23,14 @@ body {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
+  color: inherit;
 }
+/* a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ } */
+
 .hero a:link {
   color: #FFFFFF;
   background: linear-gradient(to right, #1FB89C, #1FB89C) no-repeat;
@@ -83,9 +90,9 @@ a:visited{
                  }
 
                 .navbar li a {
-                  padding: 2.5rem;
+                  /* padding: 2.5rem; */
                   text-decoration: none;
-                  color: white;
+                  /* color: white; */
                 }
 
                 .navbar li a:hover,
@@ -96,6 +103,28 @@ a:visited{
                   margin: 5rem 0rem;
                   padding: 1rem;
                 }
+                .navlinkwork a, .navlink a{
+                  padding: 0rem 2rem;
+                }
+                 .navlinkwork{
+                   margin: 5rem 0rem;
+                   padding: 1rem;
+                 }
+
+                 .worklist {
+                   padding-top: 3rem;
+                   display: flex;
+                   flex-direction: column;
+                   /* padding-bottom: 1.5rem;
+                   background-color: #FFFFFF */
+                 }
+                 .worklist a{
+                   color: var(--accentgreen);
+                   padding: 1.5rem 2rem;
+
+                 }
+
+
        /* menu */
 
         .navbar .navLinks {
@@ -104,7 +133,7 @@ a:visited{
           display: block;
           max-height: 0rem;
           transition: max-height .2s ease-out;
-          text-align: center;
+          text-align: left;
           z-index: 9;
         }
 
@@ -296,13 +325,12 @@ a:visited{
             .navbar .navLinks {
               display: flex;
               align-items: center;
+              /* padding-bottom: 2.2rem; */
 
             }
             .navlink {
               display: flex;
-              padding: 0rem 2.2rem;
-
-
+              padding: 0rem 2.6rem;
             }
             .navbar img{
               display: flex;
@@ -315,11 +343,26 @@ a:visited{
             .navlink a{
               font-size: 1.6rem;
               text-decoration: none;
-              color: var(--truebase)
+              color: var(--dark)
+            }
+            .navlinkwork {
+              padding: 0rem 2.6rem;
+              font-size: 1.6rem;
+              text-decoration: none;
+              color: var(--dark)
             }
             .navlink a:hover{
               color: white;
             }
+            .navlinkwork a{
+              font-size: 1.6rem;
+              text-decoration: none;
+              color: var(--dark);
+            }
+            .navlinkwork a:hover{
+              color: white;
+            }
+
             .hero {
               margin: 0 5.5rem;
               padding: 15rem 0;
@@ -413,7 +456,33 @@ a:visited{
                  font-weight: 300;
                  -webkit-appearance: none;
             }
-          } /*media query closer */
+            .navlinkwork:hover .worklist{
+              display: flex;
+              position: absolute;
+              z-index: 1;
+            }
+
+            .worklist {
+              flex-direction: column;
+              display: none;
+              padding: 1.5rem 0rem 0rem 0rem;
+              background: rgba(255, 255, 255, 0);
+              transition: 0.9s;
+              filter: drop-shadow(1.5rem 1.5rem 1.9rem rgba(0,0,0,0.3));
+            }
+
+            .worklist a{
+              font-size: 1.6rem;
+              padding: 1.5rem 1.5rem 1.5rem 1.5rem ;
+              background: rgba(255, 255, 255, 1);
+            }
+            .worklist a:hover{
+              background-color: var(--accentgreen);
+            }
+
+
+
+        }  /*media query closer */
 
 
                             /* THIS IS THE HERO TEXT SECTION */
